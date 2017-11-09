@@ -16,8 +16,8 @@ Accounts.onLogin(function onLogin() {
   const initialLogin = (id && onLandingPage);
 
   if (initialLogin) {
-    const username = Meteor.user().profile.name;
-    FlowRouter.go(`/${username}/profile`);
+    //  const username = Meteor.user().profile.name;
+    FlowRouter.go('/home');
   }
 });
 

@@ -13,6 +13,19 @@ FlowRouter.route('/', {
   },
 });
 
+
+
+/*                        HOME ROUTE                       */
+
+export const homePageRouteName = 'Home_Page';
+FlowRouter.route('/home', {
+  name: homePageRouteName,
+  action() {
+    BlazeLayout.render('Home_Layout', { main: homePageRouteName });
+  },
+});
+
+
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {
