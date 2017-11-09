@@ -1,2 +1,2 @@
-import './home-page.html';
-import './home-page.css';
+import './homePage.html';
+import './homePage.js';
