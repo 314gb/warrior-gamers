@@ -13,6 +13,7 @@ FlowRouter.route('/', {
   },
 });
 
+
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {
@@ -59,6 +60,20 @@ userRoutes.route('/profile', {
     BlazeLayout.render('User_Layout', { main: profilePageRouteName });
   },
 });
+
+/*                        HOME ROUTE                       */
+
+
+export const homePageRouteName = 'Home_Page';
+userRoutes.route('/home', {
+  name: homePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: homePageRouteName });
+  },
+});
+
+/*                        FILTER ROUTE                       */
+
 
 export const filterPageRouteName = 'Filter_Page';
 userRoutes.route('/filter', {
