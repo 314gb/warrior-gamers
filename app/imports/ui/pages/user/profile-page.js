@@ -77,4 +77,3 @@ Template.Profile_Page.events({
     }
   },
 });
-
