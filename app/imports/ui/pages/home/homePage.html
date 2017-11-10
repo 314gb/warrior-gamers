@@ -1,10 +1,12 @@
 <template name="Home_Page" >
-
-    {{#if Template.subscriptionsReady}}
+<div class = "ui container" id = "fucking-kill-me">
+    <!-- {{#if Template.subscriptionsReady}} -->
     <div class = "ui grid" id = "news">
+        <div class = "row">
         <div class = "sixteen wide column" id = "newsHeading">
             <h1> News and Up coming events! </h1>
             <div class = "ui grid" id = "insideGrid">
+                <div class ="row">
                 <div class = "sixteen wide column" id = "tester">
                     <p> Some {insert game here} tournament at {insert date here} left by this organization</p>
                 </div>
@@ -29,10 +31,13 @@
                 <div class = "sixteen wide column" id = "tester">
                     <p> Some {insert game here} tournament at {insert date here}</p>
                 </div>
+
+            </div>
             </div>
         </div>
     </div>
-    {{/if}}
+    </div>
+    <!-- {{/if}} -->
 
     <!-- <div class = "ui grid" id = "news">
         <div class = "row">
@@ -44,5 +49,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    -->
+    </div>
+
 </template>

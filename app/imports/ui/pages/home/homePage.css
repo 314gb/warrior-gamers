@@ -12,14 +12,15 @@
     /*background-attachment: fixed;*/
     margin-top: 16px;
     padding:0px 120px;
-    background-color: black;
     /*width: 1024px;*/
 }
 #insideGrid{
     margin-top: 16px;
     padding:0px 120px;
 }
-
+#fucking-kill-me{
+    background-color: black;
+}
 #newsHeading{
 background-color: grey;
 }
