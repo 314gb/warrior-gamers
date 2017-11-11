@@ -82,26 +82,39 @@ userRoutes.route('/filter', {
     BlazeLayout.render('User_Layout', { main: filterPageRouteName });
   },
 });
+
+
 export const addPageRouteName = 'Add_Page';
 userRoutes.route('/add', {
-    name: addPageRouteName,
-    action() {
-        BlazeLayout.render('User_Layout', { main: addPageRouteName });
-    },
+  name: addPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: addPageRouteName });
+  },
 });
+
 export const gamePageRouteName = 'Game_Page';
 userRoutes.route('/game', {
-    name: gamePageRouteName,
-    action() {
-        BlazeLayout.render('User_Layout', { main: gamePageRouteName });
-    },
+  name: gamePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: gamePageRouteName });
+  },
 });
+
 export const eventPageRouteName = 'Event_Page';
 userRoutes.route('/event', {
-    name: eventPageRouteName,
-    action() {
-        BlazeLayout.render('User_Layout', { main: eventPageRouteName });
-    },
+  name: eventPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: eventPageRouteName });
+  },
+});
+
+
+export const gamerProfilePageRouteName = 'Gamer_Profile_Page';
+userRoutes.route('/gamer-profile', {
+  name: gamerProfilePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: gamerProfilePageRouteName });
+  },
 });
 
 /*                        MISC ROUTES                       */
