@@ -51,7 +51,7 @@ Template.Gamer_Profile_Page.events({
     const picture = event.target.Picture.value;
     const steam = event.target.Steam.value;
     const blizzard = event.target.Blizzard.value;
-    const league = event.target.League.value;
+    const league = event.target.LoL.value;
     const bio = event.target.Bio.value;
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
