@@ -30,7 +30,7 @@ Template.Gamer_Profile_Page.helpers({
   profile() {
     return GamerProfiles.findDoc(FlowRouter.getParam('username'));
   },
-  interests() {
+  games() {
     const profile = GamerProfiles.findDoc(FlowRouter.getParam('username'));
     const selectedGames = profile.games;
     return profile && _.map(Games.findAll(),
