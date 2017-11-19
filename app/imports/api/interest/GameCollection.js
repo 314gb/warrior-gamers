@@ -17,7 +17,7 @@ class GameCollection extends BaseCollection {
    * Creates the Interest collection.
    */
   constructor() {
-    super('Games', new SimpleSchema({
+    super('Game', new SimpleSchema({
       name: { type: String },
       description: { type: String, optional: true },
     }, { tracker: Tracker }));

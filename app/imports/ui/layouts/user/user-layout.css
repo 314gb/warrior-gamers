@@ -1,8 +1,41 @@
 .user-layout-body {
+  border-bottom: none;
   padding-top: 75px;
+  background-color: ghostwhite;
 }
 
 #menuBar{
-    color: grey;
-    background-color: black;
+  border: 1px solid green;
+  background-color: lightgreen;
+}
+
+#menuItem {
+  color: green;
+  font-size: 20px;
+}
+
+#menuTitle {
+  color: green;
+  font-size: 30px;
+}
+
+.menu.transition.visible {
+  font-color: green !important;
+  background-color: lightgreen !important;
+  border-color: green !important;
+}
+
+.item{
+  color: green !important;
+  border-color: green !important;
+}
+
+.ui.dropdown.selection.multiple {
+  background-color: lightgreen !important;
+  border-color: green !important;
+  color: green !important;
+}
+
+.default.text {
+  color: green !important;
 }
