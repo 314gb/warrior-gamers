@@ -3,14 +3,14 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
-// import { Games } from '/imports/api/interest/GameCollection';
+import { Games } from '/imports/api/interest/GameCollection';
 
 const selectedInterestsKey = 'selectedInterests';
 
 Template.Filter_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
-  // this.subscribe(Games.getPublicationName());
+  this.subscribe(Games.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(selectedInterestsKey, undefined);
 });
@@ -32,7 +32,7 @@ Template.Filter_Page.helpers({
         function makeInterestObject(interest) {
           return {
             label: interest.name,
-            //selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
+            // selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
           };
         });
   },
