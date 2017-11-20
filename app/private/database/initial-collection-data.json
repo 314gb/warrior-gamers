@@ -91,7 +91,8 @@
           "username": "altenber",
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
-            "Evolutionary Computation"
+            "Evolutionary Computation",
+            "Runescape"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/altenberg.jpg"
@@ -102,7 +103,8 @@
           "username": "baek",
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
-            "Computer Vision"
+            "Computer Vision",
+            "Gunbound"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/baek.jpg"
@@ -114,7 +116,8 @@
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Mobile Networks",
-            "Sailing"
+            "Sailing",
+            "Runescape"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/biagioni.jpg"
@@ -126,7 +129,8 @@
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Mars",
-            "Imu Cooking"
+            "Imu Cooking",
+            "Maplestory"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/binsted.jpg"
@@ -139,93 +143,85 @@
           "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Surfing",
-            "Photography"
+            "Photography",
+            "League of Legends"
           ],
           "title": "Professor, Information and Computer Sciences",
           "picture": "/images/casanova.jpg"
         }
       ]
-    },
-    {
+    }
+  ]
+}
+
+/*
+{
       "name": "GameCollection",
       "contents": [
         {
-          "name": "Software Engineering",
-          "description": "Techniques for development of high quality systems"
-        },
-        {
-          "name": "Algorithms",
-          "description": "A set of rules to be followed in computation"
-        },
-        {
-          "name": "Mobile Networks",
-          "description": "Networks created using mobile devices."
-        },
-        {
-          "name": "Sailing",
+          "name": "League of Legends",
           "description": ""
         },
         {
-          "name": "Mars",
+          "name": "Maplestory",
           "description": ""
         },
         {
-          "name": "Imu Cooking",
-          "description": "Hawaiian practice of cooking in a pit."
-        },
-        {
-          "name": "Scuba",
+          "name": "World of Warcraft",
           "description": ""
         },
         {
-          "name": "Photography",
+          "name": "Runescape",
           "description": ""
         },
         {
-          "name": "Wind surfing",
+          "name": "Hearthstone",
           "description": ""
         },
         {
-          "name": "Psychology",
+          "name": "Overwatch",
           "description": ""
         },
         {
-          "name": "Motorcycling",
+          "name": "Combat Arms",
           "description": ""
         },
         {
-          "name": "Accreditation",
+          "name": "Diablo",
           "description": ""
         },
         {
-          "name": "Paddling",
+          "name": "Mario Kart",
           "description": ""
         },
         {
-          "name": "Crossfit",
+          "name": "PUBG",
           "description": ""
         },
         {
-          "name": "Cybersecurity",
+          "name": "Terraria",
           "description": ""
         },
         {
-          "name": "Surfing",
+          "name": "Counter Strike",
           "description": ""
         },
         {
-          "name": "Computer Vision",
+          "name": "Rust",
           "description": ""
         },
         {
-          "name": "Martial Arts",
+          "name": "Grand Chase",
           "description": ""
         },
         {
-          "name": "Evolutionary Computation",
+          "name": "Splash Fighters",
+          "description": ""
+        },
+        {
+          "name": "Gunbound",
           "description": ""
         }
       ]
     }
-  ]
-}
+*/

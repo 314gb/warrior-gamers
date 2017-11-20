@@ -6,7 +6,7 @@
 
 #menuBar{
   border: 1px solid green;
-  background-color: lightgreen;
+  background-color: #AAF8AC;
 }
 
 #menuItem {
@@ -14,14 +14,22 @@
   font-size: 20px;
 }
 
+#menuItem.active.item {
+  color: black !important;
+}
+
 #menuTitle {
   color: green;
   font-size: 30px;
 }
 
+#menuTitle.active.item {
+  color: black !important;
+}
+
 .menu.transition.visible {
   font-color: green !important;
-  background-color: lightgreen !important;
+  background-color: #AAF8AC !important;
   border-color: green !important;
 }
 
@@ -31,7 +39,7 @@
 }
 
 .ui.dropdown.selection.multiple {
-  background-color: lightgreen !important;
+  background-color: #AAF8AC !important;
   border-color: green !important;
   color: green !important;
 }
@@ -41,7 +49,14 @@
 }
 
 .ui.label.transition.visible {
-  background-color: lightgreen !important;
+  background-color: #AAF8AC !important;
   border: 1px solid green;
   color: green !important;
+}
+
+input#First::placeholder, input#Last::placeholder, input#Title::placeholder, input#Picture::placeholder, input#Steam::placeholder, input#Blizzard::placeholder, input#LoL::placeholder {
+  color: darkgreen;
+}
+textarea#Bio::placeholder {
+  color: darkgreen;
 }

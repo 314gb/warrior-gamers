@@ -1,20 +1,20 @@
 <template name="Directory_Profile">
 
-  <div class="card">
-    <div class="content">
+  <div style="border: 1px solid green; background-color: #AAF8AC;" class="card">
+    <div style="color: green; font-color: green" class="content">
       <img class="right floated mini ui image" src="{{ profile.picture }}">
-      <div class="header">
+      <div style="color: darkgreen; font-color: green" class="header">
         {{ profile.firstName }} {{ profile.lastName }}
       </div>
-      <div class="meta">
+      <div style="color: green; font-color: green" class="meta">
         {{ profile.title}}
       </div>
-      <div class="description">
+      <div style="color: green; font-color: green" class="description">
         {{ profile.bio }}
       </div>
-      <div style="margin-top: 10px">
+      <div style="color: green; font-color: green; margin-top: 10px">
         {{#each interest in profile.interests}}
-          <a style="margin-bottom: 2px" class="ui teal tag small label">{{interest}}</a>
+          <a style="margin-bottom: 2px;" class="ui green tag small label">{{interest}}</a>
         {{/each}}
       </div>
 
