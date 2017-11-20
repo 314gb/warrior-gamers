@@ -2,8 +2,8 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
-import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection.js';
-import { Games } from '/imports/api/interest/GameCollection.js';
+import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection';
+import { Games } from '/imports/api/interest/GameCollection';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
