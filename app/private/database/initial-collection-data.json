@@ -91,8 +91,7 @@
           "username": "altenber",
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
-            "Evolutionary Computation",
-            "Runescape"
+            "Evolutionary Computation"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/altenberg.jpg"
@@ -103,8 +102,7 @@
           "username": "baek",
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
-            "Computer Vision",
-            "Gunbound"
+            "Computer Vision"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/baek.jpg"
@@ -116,8 +114,7 @@
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Mobile Networks",
-            "Sailing",
-            "Runescape"
+            "Sailing"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/biagioni.jpg"
@@ -129,8 +126,7 @@
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Mars",
-            "Imu Cooking",
-            "Maplestory"
+            "Imu Cooking"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/binsted.jpg"
@@ -143,8 +139,7 @@
           "bio": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
           "interests": [
             "Surfing",
-            "Photography",
-            "League of Legends"
+            "Photography"
           ],
           "title": "Professor, Information and Computer Sciences",
           "picture": "/images/casanova.jpg"
@@ -152,102 +147,6 @@
       ]
     },
     {
-      "name": "GamesCollection",
-      "contents": [
-        {
-          "name": "Software Engineering",
-          "description": "Techniques for development of high quality systems"
-        },
-        {
-          "name": "Algorithms",
-          "description": "A set of rules to be followed in computation"
-        },
-        {
-          "name": "Mobile Networks",
-          "description": "Networks created using mobile devices."
-        },
-        {
-          "name": "Sailing",
-          "description": ""
-        },
-        {
-          "name": "Mars",
-          "description": ""
-        },
-        {
-          "name": "Imu Cooking",
-          "description": "Hawaiian practice of cooking in a pit."
-        },
-        {
-          "name": "Scuba",
-          "description": ""
-        },
-        {
-          "name": "Photography",
-          "description": ""
-        },
-        {
-          "name": "Wind surfing",
-          "description": ""
-        },
-        {
-          "name": "Psychology",
-          "description": ""
-        },
-        {
-          "name": "Motorcycling",
-          "description": ""
-        },
-        {
-          "name": "Accreditation",
-          "description": ""
-        },
-        {
-          "name": "Paddling",
-          "description": ""
-        },
-        {
-          "name": "Crossfit",
-          "description": ""
-        },
-        {
-          "name": "Cybersecurity",
-          "description": ""
-        },
-        {
-          "name": "Surfing",
-          "description": ""
-        },
-        {
-          "name": "Computer Vision",
-          "description": ""
-        },
-        {
-          "name": "Martial Arts",
-          "description": ""
-        },
-        {
-          "name": "Evolutionary Computation",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "name": "GamerProfilesCollection",
-      "contents": [
-        {
-          "firstName": "Tevin",
-          "lastName": "Sales",
-          "username": "salest2",
-          "title": "Student"
-        }
-      ]
-    }
-  ]
-}
-
-/*
-{
       "name": "GameCollection",
       "contents": [
         {
@@ -315,5 +214,17 @@
           "description": ""
         }
       ]
+    },
+    {
+      "name": "GamerProfileCollection",
+      "contents": [
+        {
+          "firstName": "Tevin",
+          "lastName": "Sales",
+          "username": "salest2",
+          "title": "Student"
+        }
+      ]
     }
-*/
+  ]
+}
