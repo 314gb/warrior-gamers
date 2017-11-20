@@ -2,8 +2,8 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
-import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection';
-import { Games } from '/imports/api/interest/GameCollection';
+import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection.js';
+import { Games } from '/imports/api/interest/GameCollection.js';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
@@ -14,7 +14,7 @@ Template.Gamer_Profile_Page.onCreated(function onCreated() {
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
-  this.context = GamerProfiles.getSchema().namedContext('Profile_Page');
+  this.context = GamerProfiles.getSchema().namedContext('Gamer_Profile_Page');
 });
 
 Template.Gamer_Profile_Page.helpers({
@@ -30,7 +30,7 @@ Template.Gamer_Profile_Page.helpers({
   profile() {
     return GamerProfiles.findDoc(FlowRouter.getParam('username'));
   },
-  interests() {
+  games() {
     const profile = GamerProfiles.findDoc(FlowRouter.getParam('username'));
     const selectedGames = profile.games;
     return profile && _.map(Games.findAll(),
@@ -51,7 +51,7 @@ Template.Gamer_Profile_Page.events({
     const picture = event.target.Picture.value;
     const steam = event.target.Steam.value;
     const blizzard = event.target.Blizzard.value;
-    const league = event.target.League.value;
+    const league = event.target.LoL.value;
     const bio = event.target.Bio.value;
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);

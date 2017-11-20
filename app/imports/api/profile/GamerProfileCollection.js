@@ -1,10 +1,10 @@
 import SimpleSchema from 'simpl-schema';
 import BaseCollection from '/imports/api/base/BaseCollection';
-import { Interests } from '/imports/api/interest/InterestCollection';
 import { check } from 'meteor/check';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { Tracker } from 'meteor/tracker';
+import { Games } from '../interest/GameCollection';
 
 /** @module GamerProfiles */
 
@@ -25,7 +25,7 @@ class GamerProfileCollection extends BaseCollection {
       lastName: { type: String, optional: true },
       bio: { type: String, optional: true },
       games: { type: Array, optional: true },
-      'interests.$': { type: String },
+      'games.$': { type: String },
       title: { type: String, optional: true },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       steam: { type: String, optional: true },
@@ -66,8 +66,8 @@ class GamerProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
     }
 
-    // Throw an error if any of the passed Interest names are not defined.
-    Interests.assertNames(games);
+    // Throw an error if any of the passed Games names are not defined.
+    Games.assertNames(games);
 
     // Throw an error if there are duplicates in the passed interest names.
     if (games.length !== _.uniq(games).length) {
@@ -102,4 +102,5 @@ class GamerProfileCollection extends BaseCollection {
 /**
  * Provides the singleton instance of this class to all other entities.
  */
+
 export const GamerProfiles = new GamerProfileCollection();
