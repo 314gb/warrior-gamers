@@ -9,31 +9,31 @@
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
       <div class="fields">
-        {{> Text_Form_Control label="First" placeholder="First" value=profile.firstName errorMessage=(fieldError "firstName")}}
-        {{> Text_Form_Control label="Last" placeholder="Last" value=profile.lastName errorMessage=(fieldError "lastName")}}
+        {{> Text_Form_Control label="First" placeholder="First" value=profile.firstName errorMessage="firstName"}}
+        {{> Text_Form_Control label="Last" placeholder="Last" value=profile.lastName errorMessage="lastName"}}
 
       </div>
 
       <div class="field">
-        {{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage=(fieldError "title")}}
-        {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage=(fieldError "picture")}}
+        {{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage="title"}}
+        {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage="picture"}}
       </div>
 
       <div class="field">
-        {{> Select_Form_Control label="Games" options=games errorMessage=(fieldError "games") multiple=true }}
+        {{> Select_Form_Control label="Games" options=games errorMessage="games" multiple=true }}
       </div>
 
       <div class="fields">
 
-        {{> Social_Network_Form_Control label="Steam" icon="steam" placeholder="uhmanoa" value=profile.steam errorMessage=(fieldError "steam")}}
+        {{> Social_Network_Form_Control label="Steam" icon="steam" placeholder="uhmanoa" value=profile.steam errorMessage="steam"}}
 
-        {{> Social_Network_Form_Control label="Blizzard" icon="game" placeholder="uhmanoa" value=profile.blizzard errorMessage=(fieldError "blizzard")}}
+        {{> Social_Network_Form_Control label="Blizzard" icon="game" placeholder="uhmanoa" value=profile.blizzard errorMessage="blizzard"}}
 
-        {{> Social_Network_Form_Control label="LoL" icon="game" placeholder="uhmanoa" value=profile.league errorMessage=(fieldError "league")}}
+        {{> Social_Network_Form_Control label="LoL" icon="game" placeholder="uhmanoa" value=profile.league errorMessage="league"}}
 
       </div>
 
-      {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Short bio statement here" errorMessage=(fieldError "bio")}}
+      {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Short bio statement here" errorMessage="bio"}}
 
 
       <button class="ui primary button" type="submit">Submit</button>

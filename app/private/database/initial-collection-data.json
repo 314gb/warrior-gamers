@@ -226,6 +226,17 @@
           "description": ""
         }
       ]
+    },
+    {
+      "name": "GamerProfilesCollection",
+      "contents": [
+        {
+          "firstName": "Tevin",
+          "lastName": "Sales",
+          "username": "salest2",
+          "title": "Student"
+        }
+      ]
     }
   ]
 }

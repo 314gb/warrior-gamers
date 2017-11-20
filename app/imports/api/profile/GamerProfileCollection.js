@@ -66,7 +66,7 @@ class GamerProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
     }
 
-    // Throw an error if any of the passed Interest names are not defined.
+    // Throw an error if any of the passed Games names are not defined.
     Games.assertNames(games);
 
     // Throw an error if there are duplicates in the passed interest names.

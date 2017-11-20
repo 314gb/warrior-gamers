@@ -2,8 +2,8 @@ import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
-import { GamerProfiles } from '../../api/profile/GamerProfileCollection';
-import { Games } from '../../api/interest/GameCollection';
+import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection';
+import { Games } from '/imports/api/interest/GameCollection';
 
 /* global Assets */
 
