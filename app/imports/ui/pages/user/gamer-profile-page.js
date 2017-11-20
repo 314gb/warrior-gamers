@@ -46,7 +46,7 @@ Template.Gamer_Profile_Page.events({
     event.preventDefault();
     const firstName = event.target.First.value;
     const lastName = event.target.Last.value;
-    const title = event.target.Title.value;
+    // const title = event.target.Title.value;
     const username = FlowRouter.getParam('username'); // schema requires username.
     const picture = event.target.Picture.value;
     const steam = event.target.Steam.value;
@@ -56,7 +56,7 @@ Template.Gamer_Profile_Page.events({
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
 
-    const updatedProfileData = { firstName, lastName, title, picture, steam, blizzard, league, bio, games,
+    const updatedProfileData = { firstName, lastName, picture, steam, blizzard, league, bio, games,
       username };
 
     // Clear out any old validation errors.

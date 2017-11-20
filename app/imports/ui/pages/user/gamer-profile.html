@@ -2,7 +2,7 @@
 
   {{#if Template.subscriptionsReady}}
 
-  <div class="ui text container segment">
+  <div class="ui text container segment" id = "gamers">
     <div class="ui dividing header">
       Profile
     </div>
@@ -15,7 +15,7 @@
       </div>
 
       <div class="field">
-        {{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage=(fieldError "title")}}
+        <!-- {{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage=(fieldError "title")}} -->
         {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage=(fieldError "picture")}}
       </div>
 
@@ -25,15 +25,15 @@
 
       <div class="fields">
 
-        {{> Social_Network_Form_Control label="Steam" icon="steam" placeholder="uhmanoa" value=profile.steam errorMessage=(fieldError "steam")}}
+        {{> Social_Network_Form_Control label="Steam" icon="steam" placeholder="Steam Name" value=profile.steam errorMessage=(fieldError "steam")}}
 
-        {{> Social_Network_Form_Control label="Blizzard" icon="game" placeholder="uhmanoa" value=profile.blizzard errorMessage=(fieldError "blizzard")}}
+        {{> Social_Network_Form_Control label="Blizzard" icon="game" placeholder="Battle Tag" value=profile.blizzard errorMessage=(fieldError "blizzard")}}
 
-        {{> Social_Network_Form_Control label="LoL" icon="game" placeholder="uhmanoa" value=profile.league errorMessage=(fieldError "league")}}
+        {{> Social_Network_Form_Control label="LoL" icon="game" placeholder="Summoner Name" value=profile.league errorMessage=(fieldError "league")}}
 
       </div>
 
-      {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Short bio statement here" errorMessage=(fieldError "bio")}}
+      {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Short description of your gaming life" errorMessage=(fieldError "bio")}}
 
 
       <button class="ui primary button" type="submit">Submit</button>
