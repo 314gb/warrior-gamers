@@ -14,7 +14,7 @@ import { Tracker } from 'meteor/tracker';
 class GameCollection extends BaseCollection {
 
   /**
-   * Creates the Interest collection.
+   * Creates the Game collection.
    */
   constructor() {
     super('Game', new SimpleSchema({
