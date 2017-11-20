@@ -39,3 +39,9 @@
 .default.text {
   color: green !important;
 }
+
+.ui.label.transition.visible {
+  background-color: lightgreen !important;
+  border: 1px solid green;
+  color: green !important;
+}

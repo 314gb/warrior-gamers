@@ -28,7 +28,7 @@ Template.Filter_Page.helpers({
   },
 
   interests() {
-    return _.map(Interests.findAll(),
+    return _.map(Games.findAll(),
         function makeInterestObject(interest) {
           return {
             label: interest.name,
