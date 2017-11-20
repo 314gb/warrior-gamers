@@ -16,9 +16,9 @@
     </div>
     }}
   <div class="{{#if required}}required{{/if}} field">
-    <label>{{label}}</label>
+    <label style="color: green">{{label}}</label>
     <div class="field">
-      <input type="text"
+      <input style="color: green; background-color: #AAF8AC; border: 1px solid green" type="text"
              name="{{#if name}}{{name}}{{else}}{{label}}{{/if}}"
              id="{{#if id}}{{id}}{{else}}{{label}}{{/if}}"
              placeholder="{{#if placeholder}}{{placeholder}}{{else}}{{label}}{{/if}}"

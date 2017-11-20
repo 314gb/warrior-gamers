@@ -145,6 +145,86 @@
           "picture": "/images/casanova.jpg"
         }
       ]
+    },
+    {
+      "name": "GameCollection",
+      "contents": [
+        {
+          "name": "League of Legends",
+          "description": ""
+        },
+        {
+          "name": "Maplestory",
+          "description": ""
+        },
+        {
+          "name": "World of Warcraft",
+          "description": ""
+        },
+        {
+          "name": "Runescape",
+          "description": ""
+        },
+        {
+          "name": "Hearthstone",
+          "description": ""
+        },
+        {
+          "name": "Overwatch",
+          "description": ""
+        },
+        {
+          "name": "Combat Arms",
+          "description": ""
+        },
+        {
+          "name": "Diablo",
+          "description": ""
+        },
+        {
+          "name": "Mario Kart",
+          "description": ""
+        },
+        {
+          "name": "PUBG",
+          "description": ""
+        },
+        {
+          "name": "Terraria",
+          "description": ""
+        },
+        {
+          "name": "Counter Strike",
+          "description": ""
+        },
+        {
+          "name": "Rust",
+          "description": ""
+        },
+        {
+          "name": "Grand Chase",
+          "description": ""
+        },
+        {
+          "name": "Splash Fighters",
+          "description": ""
+        },
+        {
+          "name": "Gunbound",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "GamerProfileCollection",
+      "contents": [
+        {
+          "firstName": "Tevin",
+          "lastName": "Sales",
+          "username": "salest2",
+          "title": "Student"
+        }
+      ]
     }
   ]
 }

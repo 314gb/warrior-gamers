@@ -17,10 +17,10 @@
     </div>
     }}
   <div class="{{#if required}}required{{/if}} field">
-    <label>{{label}}</label>
+    <label style="color: green;">{{label}}</label>
     <div class="field">
       <div class="ui left icon input">
-        <input type="input"
+        <input style="color: green; background-color: #AAF8AC; border: 1px solid green" type="input"
                name="{{#if name}}{{name}}{{else}}{{label}}{{/if}}"
                id="{{#if id}}{{id}}{{else}}{{label}}{{/if}}"
                placeholder="{{#if placeholder}}{{placeholder}}{{else}}{{label}}{{/if}}"
