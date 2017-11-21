@@ -221,9 +221,24 @@
         {
           "firstName": "Tevin",
           "lastName": "Sales",
-          "username": "salest2",
-          "title": "Student"
-        }
+          "username": "salest2"
+      },
+      {
+          "firstName":"Kalani",
+          "lastName":"Sanidad",
+          "username":"ksanidad",
+          "picture": "/images/casanova.jpg",
+          "bio":"LOL gg fam",
+          "interests": [
+            "Gunbound",
+            "League of Legends",
+            "Rust"
+          ],
+          "steam":"kaisuke23",
+          "blizzard":"",
+          "league":"kaisuke23"
+
+      }
       ]
     }
   ]

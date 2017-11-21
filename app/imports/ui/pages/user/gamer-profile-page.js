@@ -59,6 +59,7 @@ Template.Gamer_Profile_Page.events({
     const updatedProfileData = { firstName, lastName, picture, steam, blizzard, league, bio, games,
       username };
 
+    console.log(updatedProfileData);
     // Clear out any old validation errors.
     instance.context.reset();
     // Invoke clean so that updatedProfileData reflects what will be inserted.
