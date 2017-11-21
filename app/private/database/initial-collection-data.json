@@ -222,14 +222,14 @@
           "firstName": "Tevin",
           "lastName": "Sales",
           "username": "salest2"
-      },
-      {
+        },
+        {
           "firstName":"Kalani",
           "lastName":"Sanidad",
           "username":"ksanidad",
           "picture": "/images/casanova.jpg",
           "bio":"LOL gg fam",
-          "interests": [
+          "games": [
             "Gunbound",
             "League of Legends",
             "Rust"
@@ -237,8 +237,7 @@
           "steam":"kaisuke23",
           "blizzard":"",
           "league":"kaisuke23"
-
-      }
+        }
       ]
     }
   ]
