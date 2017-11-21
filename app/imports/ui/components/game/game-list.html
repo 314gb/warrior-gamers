@@ -1,0 +1,22 @@
+<template name="Game_List">
+
+  <div class="card">
+    <div class="content">
+      <img class="ui image" src="{{ profile.picture }}">
+    </div>
+      <div class="header">
+        {{ profile.firstName }} {{ profile.lastName }}
+      </div>
+      <div class="meta">
+        {{ profile.bio }}
+      </div>
+      <div class="description">
+        {{ profile.bio }}
+      </div>
+      <div style="margin-top: 10px">
+        {{#each interest in profile.interests}}
+          <a style="margin-bottom: 2px" class="ui teal tag small label">{{interest}}</a>
+        {{/each}}
+      </div>
+  </div>
+</template>
