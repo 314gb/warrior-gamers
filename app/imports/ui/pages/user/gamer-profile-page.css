@@ -1,0 +1,10 @@
+#view_profile{
+    background-color: #AAF8AC;
+    border: 1px solid green
+}
+#view_profile p{
+    color: darkgreen;
+}
+#view_profile .column{
+    color: darkgreen;
+}
