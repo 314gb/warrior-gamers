@@ -1,10 +1,16 @@
 <template name="Gamer_Profile_Page">
 
   {{#if Template.subscriptionsReady}}
+  <div class = "ui text container segment">
+    <div class="ui top menu">
+      <a class="active item" data-tab = "view_profile">View Your Profile</a>
+      <a class="item" data-tab = "change_profile">Change Your Profile</a>
+    </div>
 
-  <div class="ui text container segment" style="background-color: #AAF8AC; border: 1px solid green;">
+
+    <div class="ui tab segment" style="background-color: #AAF8AC; border: 1px solid green;" data-tab="change_profile">
     <div style="border-color: green; color: darkgreen" class="ui dividing header">
-      CREATE YOUR OWN PROFILE!
+      Change your profile
     </div>
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
@@ -46,7 +52,12 @@
       {{/if}}
     </form>
   </div>
-
+  <div class="ui tab " data-tab = "view_profile">
+      <div class = "ui text container segment">YEEEEE BOI</div>
+  </div>
+  <script>
+  $('.top.menu .item').tab();
+  </script>
+</div>
   {{/if}}
-
 </template>
