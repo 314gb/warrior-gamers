@@ -41,7 +41,7 @@
         </button>
         {{#if displaySuccessMessage}}
         <div class="ui success message">
-          <p>Profile data successfully updated.</p>
+          <p>Game data added to the database!</p>
         </div>
         {{/if}}
       </form>
@@ -56,7 +56,7 @@
       <form class="ui equal width form add-event-data-form {{ successClass }} {{ errorClass }}">
 
         <div class="fields">
-          {{> Text_Form_Control label="Name" placeholder="Game Name" value=game.name errorMessage=(fieldError "name")}}
+          {{> Text_Form_Control label="Name" placeholder="Name of the event here..." value=game.name errorMessage=(fieldError "name")}}
         </div>
 
         <div class="field">
@@ -79,7 +79,7 @@
         </button>
         {{#if displaySuccessMessage}}
         <div class="ui success message">
-          <p>Profile data successfully updated.</p>
+          <p>Event has been created!</p>
         </div>
         {{/if}}
       </form>
