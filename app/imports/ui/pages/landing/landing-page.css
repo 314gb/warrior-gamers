@@ -122,6 +122,6 @@
   right: 10px;
   bottom: 10px;
 }
-body {
-  background-color: lightgreen;
+#landingpage{
+  background-image: url("http://www.extremetech.com/wp-content/uploads/2011/11/dreamhack-night-shot.jpg");
 }

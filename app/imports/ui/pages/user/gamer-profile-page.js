@@ -76,8 +76,4 @@ Template.Gamer_Profile_Page.events({
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
-  '.top.menu .item'(event){
-      event.preventDefault();
-      return tab();
-  }
 });
