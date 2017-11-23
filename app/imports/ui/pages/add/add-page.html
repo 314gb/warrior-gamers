@@ -46,7 +46,19 @@
       <form class="ui equal width form event-data-form {{ successClass }} {{ errorClass }}">
 
         <div class="fields">
-          {{> Text_Form_Control label="Name" placeholder="Game Name" value=game.name errorMessage=(fieldError "name")}}
+          {{> Text_Form_Control label="Event" placeholder="Event Name" value=event.name errorMessage=(fieldError "event")}}
+        </div>
+
+        <div class="fields">
+          {{> Text_Form_Control label="Date" placeholder="Date" value=date.name errorMessage=(fieldError "date")}}
+        </div>
+
+        <div class="fields">
+          {{> Text_Form_Control label="Location" placeholder="Location" value=location.name errorMessage=(fieldError "location")}}
+        </div>
+
+        <div class="field">
+          {{> Select_Form_Control label="Games" options=games errorMessage="games" multiple=true }}
         </div>
 
         {{> TextArea_Form_Control label="Description" value=game.description placeholder="Short Description" errorMessage=(fieldError "description")}}
