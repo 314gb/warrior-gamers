@@ -239,6 +239,91 @@
           "league":"kaisuke23"
         }
       ]
+    },
+    {
+      "name": "TagsCollection",
+      "contents": [
+        {
+          "name": "MMORPG",
+          "description": ""
+        },
+        {
+          "name": "FPS",
+          "description": ""
+        },
+        {
+          "name": "Fighting",
+          "description": ""
+        },
+        {
+          "name": "Indie",
+          "description": ""
+        },
+        {
+          "name": "Trading Card",
+          "description": ""
+        },
+        {
+          "name": "Adventure",
+          "description": ""
+        },
+        {
+          "name": "Action",
+          "description": ""
+        },
+        {
+          "name": "Single Player",
+          "description": ""
+        },
+        {
+          "name": "Multiplayer",
+          "description": ""
+        },
+        {
+          "name": "Strategy",
+          "description": ""
+        },
+        {
+          "name": "Simulation",
+          "description": ""
+        },
+        {
+          "name": "RPG",
+          "description": ""
+        },
+        {
+          "name": "Free to Play",
+          "description": ""
+        },
+        {
+          "name": "Sports",
+          "description": ""
+        },
+        {
+          "name": "Horror",
+          "description": ""
+        },
+        {
+          "name": "Puzzle",
+          "description": ""
+        },
+        {
+          "name": "MOBA",
+          "description": ""
+        },
+        {
+          "name": "Dungeon Crawler",
+          "description": ""
+        },
+        {
+          "name": "Local Multiplayer",
+          "description": ""
+        },
+        {
+          "name": "Platformer",
+          "description": ""
+        }
+      ]
     }
   ]
 }
