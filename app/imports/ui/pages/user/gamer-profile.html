@@ -55,11 +55,14 @@
       {{/if}}
     </form>
   </div>
-  <div class="ui tab segement " data-tab = "view_profile" id = "view_profile">
-      <!-- <div>YEEEEE BOI</div> -->
+  <div class="active ui tab segment " data-tab = "view_profile" id = "view_profile">
+
      <div class = "ui dividing header">
      <p>Your Profile: {{profile.firstName}} {{profile.lastName}}</p>
+     {{profile.bio}}
+     {{leagueRequest}}
      </div>
+
      <div class = "ui three column divided grid">
          <div class = "row">
              <div class = "column">

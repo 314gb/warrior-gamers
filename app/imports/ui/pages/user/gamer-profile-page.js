@@ -38,6 +38,25 @@ Template.Gamer_Profile_Page.helpers({
               return { label: game.name, selected: _.contains(selectedGames, game.name) };
             });
   },
+  leagueRequest(){
+      const profile = GamerProfiles.findDoc(FlowRouter.getParam('username'));
+      var request ="https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/";
+      var apiAppender = "?api_key=";
+      var LeagueKey = "RGAPI-e70c7224-04f4-4a97-a374-de1970a4a89b";
+
+      var letsSee = request + profile.league + apiAppender + LeagueKey;
+
+    //   console.log(letsSee);
+      var xhr = new XMLHttpRequest({mozSystem: true});
+      //
+      xhr.open("GET", letsSee, false);
+      xhr.send();
+      //
+      console.log(xhr.status);
+      console.log(xhr.statusText);
+      var resp = xhr.responseText;
+      console.log(resp);
+  },
 });
 
 
@@ -75,9 +94,5 @@ Template.Gamer_Profile_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
-  },
-  '.top.menu .item'(event){
-      event.preventDefault();
-      return tab();
-  }
+}
 });

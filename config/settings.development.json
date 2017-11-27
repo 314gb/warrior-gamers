@@ -11,5 +11,8 @@
       "popupHeight": 610
     },
     "initialDatabaseFileName": "database/initial-collection-data.json"
-  }
+},
+"permissions": {
+       "systemXHR" : {},
+},
 }
