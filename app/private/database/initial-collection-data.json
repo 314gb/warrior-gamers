@@ -324,6 +324,22 @@
           "description": ""
         }
       ]
+    },
+    {
+      "name": "EventCollection",
+      "contents": [
+        {
+          "name": "Super Mario Bros Tournament",
+          "date": "12/12/12",
+          "location": "POST 127",
+          "games": [
+            "Gunbound",
+            "League of Legends",
+            "Rust"
+          ],
+          "description": "Hello, my name is Sae!"
+        }
+      ]
     }
   ]
 }

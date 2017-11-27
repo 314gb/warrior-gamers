@@ -2,7 +2,9 @@ import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
 import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection';
 import { Games } from '/imports/api/interest/GameCollection';
+import { Events } from '/imports/api/interest/EventCollection';
 import { Tags } from '../interest/TagsCollection';
+
 
 export function removeAllEntities() {
   Profiles.removeAll();
@@ -10,5 +12,6 @@ export function removeAllEntities() {
   GamerProfiles.removeAll();
   Games.removeAll();
   Tags.removeAll();
+  Events.removeAll();
 }
 

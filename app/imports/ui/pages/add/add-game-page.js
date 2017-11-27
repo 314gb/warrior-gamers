@@ -1,6 +1,7 @@
+/*
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
-import { FlowRouter } from 'meteor/kadira:flow-router';
+// import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Games } from '../../../api/interest/GameCollection';
 import { Tags } from '../../../api/interest/TagsCollection';
@@ -8,7 +9,7 @@ import { Tags } from '../../../api/interest/TagsCollection';
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
-Template.Add_Page.onCreated(function onCreated() {
+Template.Add_Game_Page.onCreated(function onCreated() {
   this.subscribe(Games.getPublicationName());
   this.subscribe(Tags.getPublicationName());
   this.messageFlags = new ReactiveDict();
@@ -17,7 +18,7 @@ Template.Add_Page.onCreated(function onCreated() {
   this.context = Games.getSchema().namedContext('Add_Page');
 });
 
-Template.Add_Page.helpers({
+Template.Add_Game_Page.helpers({
   successClass() {
     return Template.instance().messageFlags.get(displaySuccessMessage) ? 'success' : '';
   },
@@ -37,4 +38,4 @@ Template.Add_Page.helpers({
     return Games.findAll();
   },
 });
-
+*/

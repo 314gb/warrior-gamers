@@ -5,6 +5,7 @@ import { _ } from 'meteor/underscore';
 import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection';
 import { Games } from '/imports/api/interest/GameCollection';
 
+
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
