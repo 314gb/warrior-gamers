@@ -43,13 +43,13 @@ Template.Add_Page.helpers({
 Template.Add_Page.events({
   'submit .game-data-form'(event, instance) {
     event.preventDefault();
-    const gameName = event.target.Title.value;
+    const name = event.target.Name.value;
     const picture = event.target.Picture.value;
     const description = event.target.Description.value;
     const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const tags = _.map(selectedTags, (option) => option.value);
 
-    const gameData = { gameName, picture, description, tags };
+    const gameData = { name, picture, description, tags };
 
     // Clear out any old validation errors.
     instance.context.reset();

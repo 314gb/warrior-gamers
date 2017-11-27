@@ -40,7 +40,7 @@ class GameCollection extends BaseCollection {
   define({ name, picture, description, tags }) {
     check(name, String);
     check(description, String);
-    check(picture, SimpleSchema.RegEx.Url);
+    check(picture, String);
     if (this.find({ name }).count() > 0) {
       throw new Meteor.Error(`${name} is previously defined in another Game`);
     }
