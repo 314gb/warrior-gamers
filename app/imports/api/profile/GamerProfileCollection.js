@@ -69,7 +69,7 @@ class GamerProfileCollection extends BaseCollection {
     // Throw an error if any of the passed Games names are not defined.
     Games.assertNames(games);
 
-    // Throw an error if there are duplicates in the passed interest names.
+    // Throw an error if there are duplicates in the passed games names.
     if (games.length !== _.uniq(games).length) {
       throw new Meteor.Error(`${games} contains duplicates`);
     }
