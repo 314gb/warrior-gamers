@@ -1,9 +1,8 @@
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
-import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
-import { Games } from '/imports/api/interest/GameCollection';
-import { Events } from '/imports/api/interest/EventCollection';
+import { Games } from '../../../api/interest/GameCollection';
+import { Events } from '../../../api/interest/EventCollection';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
@@ -14,6 +13,7 @@ Template.Add_Event_Page.onCreated(function onCreated() {
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
+  this.context = Events.getSchema().namedContext('Add_Event_Page');
 });
 
 Template.Add_Event_Page.helpers({
@@ -31,7 +31,6 @@ Template.Add_Event_Page.helpers({
         function makeInterestObject(game) {
           return {
             label: game.name,
-            // selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
           };
         });
   },
@@ -49,13 +48,13 @@ Template.Add_Event_Page.events({
 
     const eventData = { eventName, date, location, games, description };
 
+    instance.context.reset();
     const cleanData = Events.getSchema().clean(eventData);
     instance.context.validate(cleanData);
 
     if (instance.context.isValid()) {
-      const docID = Events.findDoc(FlowRouter.getParam('username'))._id;
-      const id = Events.insert(docID, { $set: cleanData });
-      instance.messageFlags.set(displaySuccessMessage, id);
+      Events.define(eventData);
+      instance.messageFlags.set(displaySuccessMessage);
       instance.messageFlags.set(displayErrorMessages, false);
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);

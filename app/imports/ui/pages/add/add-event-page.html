@@ -7,23 +7,23 @@
         Create an Event!
       </div>
       <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
-        <div class="fields">
-          {{> Text_Form_Control label="Event" placeholder="Event Name" value=event.name errorMessage=(fieldError "event")}}
+        <div class="field">
+          {{> Text_Form_Control label="Name" placeholder="Event Name" value=event.name errorMessage=(fieldError "event")}}
         </div>
 
-        <div class="fields">
-          {{> Text_Form_Control label="Date" placeholder="XX/XX/XXXX" value=date.name errorMessage=(fieldError "date")}}
+        <div class="field">
+          {{> Text_Form_Control label="Date" placeholder="XX/XX/XXXX" value=event.date errorMessage=(fieldError "date")}}
         </div>
 
-        <div class="fields">
-          {{> Text_Form_Control label="Location" placeholder="Location" value=location.name errorMessage=(fieldError "location")}}
+        <div class="field">
+          {{> Text_Form_Control label="Location" placeholder="Location" value=event.location errorMessage=(fieldError "location")}}
         </div>
 
         <div class="field">
           {{> Select_Form_Control label="Games" options=games errorMessage="games" multiple=true }}
         </div>
 
-        {{> TextArea_Form_Control label="Description" value=game.description placeholder="Short Description" errorMessage=(fieldError "description")}}
+        {{> TextArea_Form_Control label="Description" value=event.description placeholder="Short Description" errorMessage=(fieldError "description")}}
 
         <button style="display: block; margin: 0 auto; background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
           <div style="font-size: 20px; padding-left: 10px; color: green;" class="visible content">Submit!</div>
