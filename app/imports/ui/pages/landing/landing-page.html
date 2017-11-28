@@ -1,42 +1,38 @@
 <template name="Landing_Page">
-  <div id="landingpage">
-    <div style="background-color: transparent;" class="landing-section-1">
+  <div>
+    <div style="background-color: transparent;" id="landingtop">
       <div class="ui grid">
         <div class="row">
           <div class="ui right aligned sixteen wide column">
             {{> Cas_Login }}
           </div>
         </div>
-        <div style="background: rgba(255, 255, 255, 0.6); padding-bottom: 10px" class="row">
+        <div style="color: lightgreen" class="row">
           <div class="ui center aligned sixteen wide column">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Hawaii_Warriors_Logo.svg/220px-Hawaii_Warriors_Logo.svg.png">
-            <h1 style="font-size: 69px; font-family: Verdana, Geneva, sans-serif; color: lime" class="landing-section-1-welcome">Welcome to Warrior Gamers!</h1>
-            <h3 style="font-size: 25px; font-family: Verdana, Geneva, sans-serif; padding-bottom: 10px; color: lime" class="landing-section-1-tagline">Gaming portfolios and networking for the University of Hawaii
+            <h1 style="font-size: 69px; font-family: Verdana, Geneva, sans-serif;" class="landing-section-1-welcome">Welcome to Warrior Gamers!</h1>
+            <h3 style="font-size: 25px; font-family: Verdana, Geneva, sans-serif; padding-bottom: 10px;" class="landing-section-1-tagline">Gaming portfolios and networking for the University of Hawaii
               community!</h3>
           </div>
         </div>
       </div>
     </div>
 
-    <div style="background-color: transparent;" class="landing-section-2">
-      <div style="margin-top: 50px; height: 550px;" class="ui grid">
+    <div style="background-color: transparent;" id="landingbottom">
+      <div style="height: 550px;" class="ui grid">
         <div class="slideshow-container">
           <div class="mySlides fade">
-            <h1 style="text-align: center; font-family: Verdana, Geneva, sans-serif; color: lime;" class="landing-section-header">Do you play games?</h1>
+            <h1 style="text-align: center; font-family: Verdana, Geneva, sans-serif; color: lightgreen;" class="landing-section-header">Do you play games?</h1>
             <img src="http://blog.whatusersdo.com/wp-content/uploads/2016/09/The-Periodic-Table-of-Game-Controllers.jpg" style="margin-top: 20px; height: 100%; width:100%; border: 5px inset lime">
           </div>
           <div class="mySlides fade">
-            <h1 style="font-family: Verdana, Geneva, sans-serif; color: lime; text-align: center" class="landing-section-header">Want to play with others?</h1>
+            <h1 style="font-family: Verdana, Geneva, sans-serif; color: lightgreen; text-align: center" class="landing-section-header">Want to play with others?</h1>
             <img src="/images/lan.jpg" style="margin-top: 20px; height: 100%; width:100%; border: 5px inset lime">
           </div>
           <div class="mySlides fade">
-            <h2 style="font-family: Verdana, Geneva, sans-serif; color: lime; text-align: center" class="landing-section-header">Find others to play games with using Warrior Gamers</h2>
+            <h2 style="font-family: Verdana, Geneva, sans-serif; color: lightgreen; text-align: center" class="landing-section-header">Find others to play games with using Warrior Gamers</h2>
             <img src="/images/Filterpage.png" style="margin-top: 20px; height: 100%; width:100%; border: 5px inset lime">
           </div>
-          <!--
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          -->
           <br>
         </div>
       </div>
@@ -69,89 +65,4 @@
     </script>
   </div>
 </template>
-
-<!--
-<div class="centered middle-menu">
-</div>
-
-<div class="landing-section-1">
-    <div class="ui grid">
-      <div class="row">
-        <div class="ui right aligned sixteen wide column">
-          {{> Cas_Login }}
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="ui center aligned sixteen wide column">
-          <h1 class="landing-section-1-welcome">Welcome to Warrior Gamers</h1>
-          <h3 class="landing-section-1-tagline">Gaming portfolios and networking for the University of Hawaii community!</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div class="landing-section-2">
-    <div class="ui grid">
-      <div class="ui eight wide column">
-        <img class="ui centered medium image" src="/images/profile.png">
-      </div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Create your portfolio.</h1>
-        <h1 class="landing-section-header">Specify your interests.</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="landing-section-3">
-    <div class="ui grid">
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Publish your portfolio in the BowFolio directory.</h1>
-      </div>
-      <div class="ui eight wide column">
-        <img class="ui centered medium image" src="/images/directory.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="landing-section-2">
-    <div class="ui grid">
-      <div class="ui eight wide column">
-        <img class="ui centered medium image" src="/images/filter.png">
-      </div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Find UH community members with similar interests.</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="/images/profile.png" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="/images/profile.png" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="/images/profile.png" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
--->
+<!-- background: rgba(255, 255, 255, 0.6); -->
