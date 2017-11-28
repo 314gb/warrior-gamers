@@ -151,15 +151,12 @@
       "contents": [
         {
           "name": "League of Legends",
-<<<<<<< HEAD
           "description": "big game"
-=======
           "picture": "",
           "description": "",
           "tags": [
             ""
           ]
->>>>>>> master
         },
         {
           "name": "Maplestory",
