@@ -1,22 +1,30 @@
 <template name="Game_List">
 
-  <div class="card">
-    <div class="content">
-      <img class="ui image" src="{{ profile.picture }}">
+  <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
+    <div class="image">
+      <img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg">
     </div>
-      <div class="header">
-        {{ profile.firstName }} {{ profile.lastName }}
-      </div>
-      <div class="meta">
-        {{ profile.bio }}
-      </div>
+    <div class="content">
+      <a class="header">
+      {{game.name}}
+      </a>
       <div class="description">
-        {{ profile.bio }}
+        {{game.description}}
+        League of Legends is a multiplayer
+        online battle arena video game developed and published
+        by Riot Games for Microsoft Windows and macOS.
       </div>
-      <div style="margin-top: 10px">
-        {{#each interest in profile.interests}}
-          <a style="margin-bottom: 2px" class="ui teal tag small label">{{interest}}</a>
-        {{/each}}
-      </div>
+    </div>
+    <div style="margin-top: 10px">
+      <a style="margin-bottom: 2px" class="ui teal tag small label">MOBA</a>
+      <a style="margin-bottom: 2px" class="ui teal tag small label">Competitive</a>
+    </div>
+    <div class="content">
+      <a>
+        <i class="user icon"></i>
+        22 Tagged
+      </a>
+    </div>
   </div>
+
 </template>

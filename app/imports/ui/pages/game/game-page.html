@@ -5,6 +5,12 @@
         What others are playing
     </div>
 
+    <div style="margin-top: 20px" class="ui cards">
+    {{#each game in games }}
+    {{> Game_List game=game }}
+    {{/each}}
+    </div>
+
     <div class="ui cards" style="margin-left: 150px">
 
         <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
@@ -31,76 +37,6 @@
             </div>
         </div>
 
-        <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
-            <div class="image">
-                <img src="https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-285x380.jpg">
-            </div>
-            <div class="content">
-                <a class="header">PLAYERUNKNOWN'S BATTLEGROUNDS</a>
-                <div class="description">
-                    PlayerUnknown's Battlegrounds is a multiplayer online battle royale video game
-                    developed by PUBG Corporation, a subsidiary of Korean publisher Bluehole.
-                </div>
-            </div>
-            <div style="margin-top: 10px">
-                <a style="margin-bottom: 2px" class="ui teal tag small label">Shooter</a>
-                <a style="margin-bottom: 2px" class="ui teal tag small label">Surival</a>
-            </div>
-            <div class="content">
-                <a>
-                    <i class="user icon"></i>
-                    20 Tagged
-                </a>
-            </div>
-        </div>
-
-        <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
-            <div class="image">
-                <img src="https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-285x380.jpg">
-            </div>
-            <div class="content">
-                <a class="header">Overwatch</a>
-                <div class="description">
-                    Overwatch is a team-based multiplayer online first-person shooter video game
-                    developed and published by Blizzard Entertainment. It was released in
-                    May 2016 for Windows, PlayStation 4, and Xbox One.
-                </div>
-            </div>
-            <div style="margin-top: 10px">
-                <a style="margin-bottom: 2px" class="ui teal tag small label">FPS</a>
-                <a style="margin-bottom: 2px" class="ui teal tag small label">MOBA</a>
-            </div>
-            <div class="content">
-                <a>
-                    <i class="user icon"></i>
-                    15 Tagged
-                </a>
-            </div>
-        </div>
-
-        <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
-            <div class="image">
-                <img src="https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-285x380.jpg">
-            </div>
-            <div class="content">
-                <a class="header">Hearthstone</a>
-                <div class="description">
-                    Hearthstone, originally known as Hearthstone: Heroes of Warcraft,
-                    is a free-to-play online collectible card video game developed and
-                    published by Blizzard Entertainment.
-                </div>
-            </div>
-            <div style="margin-top: 10px">
-                <a style="margin-bottom: 2px" class="ui teal tag small label">CCG</a>
-                <a style="margin-bottom: 2px" class="ui teal tag small label">Turn-based</a>
-            </div>
-            <div class="content">
-                <a>
-                    <i class="user icon"></i>
-                    10 Tagged
-                </a>
-            </div>
-        </div>
 
     </div>
 
