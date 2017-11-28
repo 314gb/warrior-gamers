@@ -5,39 +5,10 @@
         What others are playing
     </div>
 
-    <div style="margin-top: 20px" class="ui cards">
-    {{#each game in games }}
-    {{> Game_List game=game }}
-    {{/each}}
-    </div>
-
-    <div class="ui cards" style="margin-left: 150px">
-
-        <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
-            <div class="image">
-                <img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg">
-            </div>
-            <div class="content">
-                <a class="header">League of Legends</a>
-                <div class="description">
-                    League of Legends is a multiplayer
-                    online battle arena video game developed and published
-                    by Riot Games for Microsoft Windows and macOS.
-                </div>
-            </div>
-            <div style="margin-top: 10px">
-                <a style="margin-bottom: 2px" class="ui teal tag small label">MOBA</a>
-                <a style="margin-bottom: 2px" class="ui teal tag small label">Competitive</a>
-            </div>
-            <div class="content">
-                <a>
-                    <i class="user icon"></i>
-                    22 Tagged
-                </a>
-            </div>
-        </div>
-
-
+    <div style="margin-top: 20px; margin-left: 150px" class="ui cards">
+        {{#each game in games }}
+        {{> Game_List game=game }}
+        {{/each}}
     </div>
 
 
