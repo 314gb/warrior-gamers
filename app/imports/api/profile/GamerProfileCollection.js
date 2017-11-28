@@ -56,7 +56,7 @@ class GamerProfileCollection extends BaseCollection {
    * @returns The newly created docID.
    */
   define({ firstName = '', lastName = '', username, bio = '', games = [], picture = '', title = '', steam = '',
-      blizzard = '', league = '' }) {
+           blizzard = '', league = '' }) {
     // make sure required fields are OK.
     const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String,
       title: String };

@@ -32,7 +32,7 @@ Template.Filter_Page.helpers({
     return _.filter(allProfiles, gamerprofile => _.intersection(gamerprofile.games, selectedInterests).length > 0);
   },
 
-  interests() {
+  games() {
     return _.map(Games.findAll(),
         function makeInterestObject(game) {
           return {

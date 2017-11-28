@@ -7,16 +7,16 @@ import { Tags } from '../../../api/interest/TagsCollection';
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
-Template.Add_Page.onCreated(function onCreated() {
+Template.Add_Game_Page.onCreated(function onCreated() {
   this.subscribe(Games.getPublicationName());
   this.subscribe(Tags.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
-  this.context = Games.getSchema().namedContext('Add_Page');
+  this.context = Games.getSchema().namedContext('Add_Game_Page');
 });
 
-Template.Add_Page.helpers({
+Template.Add_Game_Page.helpers({
   successClass() {
     return Template.instance().messageFlags.get(displaySuccessMessage) ? 'success' : '';
   },
@@ -40,7 +40,7 @@ Template.Add_Page.helpers({
   },
 });
 
-Template.Add_Page.events({
+Template.Add_Game_Page.events({
   'submit .game-data-form'(event, instance) {
     event.preventDefault();
     const name = event.target.Name.value;
@@ -69,4 +69,3 @@ Template.Add_Page.events({
     }
   },
 });
-

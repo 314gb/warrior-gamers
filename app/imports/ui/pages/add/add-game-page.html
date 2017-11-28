@@ -1,7 +1,7 @@
-<template name="Add_Page">
+<template name="Add_Game_Page">
 
   {{#if Template.subscriptionsReady}}
-  <div class="ui text container segment">
+    <div class="ui text container segment">
       <div style="border-color: green; color: darkgreen" class="ui dividing header">
         Add a game to the database!
       </div>
@@ -28,11 +28,11 @@
           </div>
         </button>
         {{#if displaySuccessMessage}}
-        <div class="ui success message">
-          <p>Game data successfully added.</p>
-        </div>
+          <div class="ui success message">
+            <p>Game data successfully added.</p>
+          </div>
         {{/if}}
       </form>
-  </div>
+    </div>
   {{/if}}
 </template>
