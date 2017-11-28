@@ -38,15 +38,16 @@ Template.Add_Event_Page.helpers({
 
 Template.Add_Event_Page.events({
   'submit .event-data-form'(event, instance) {
+    console.log('HELLO');
     event.preventDefault();
-    const eventName = event.target.Event.value;
+    const name = event.target.Name.value;
     const date = event.target.Date.value;
     const location = event.target.Location.value;
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
     const description = event.target.Description.value;
 
-    const eventData = { eventName, date, location, games, description };
+    const eventData = { name, date, location, games, description };
 
     instance.context.reset();
     const cleanData = Events.getSchema().clean(eventData);
@@ -54,7 +55,7 @@ Template.Add_Event_Page.events({
 
     if (instance.context.isValid()) {
       Events.define(eventData);
-      instance.messageFlags.set(displaySuccessMessage);
+      instance.messageFlags.set(displaySuccessMessage, true);
       instance.messageFlags.set(displayErrorMessages, false);
     } else {
       instance.messageFlags.set(displaySuccessMessage, false);
