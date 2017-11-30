@@ -2,7 +2,7 @@
 
   <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
     <div class="image">
-      <img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg">
+      <img src="{{game.picture}}">
     </div>
     <div class="content">
       <a class="header">
@@ -13,9 +13,11 @@
       </div>
     </div>
     <div style="margin-top: 10px">
-      <a style="margin-bottom: 2px" class="ui teal tag small label">MOBA</a>
-      <a style="margin-bottom: 2px" class="ui teal tag small label">Competitive</a>
+      {{#each Tags in game.tags}}
+      <a style="margin-bottom: 2px;" class="ui teal tag small label">{{Tags}}</a>
+      {{/each}}
     </div>
+
     <div class="content">
       <a>
         <i class="user icon"></i>

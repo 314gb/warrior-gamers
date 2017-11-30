@@ -26,9 +26,6 @@ Template.Filter_Page.helpers({
     // Find all profiles with the currently selected interests.
     const allProfiles = GamerProfiles.findAll();
     const selectedInterests = Template.instance().messageFlags.get(selectedInterestsKey);
-    console.log(allProfiles);
-    console.log(GamerProfiles.findAll());
-    console.log(selectedInterests);
     return _.filter(allProfiles, gamerprofile => _.intersection(gamerprofile.games, selectedInterests).length > 0);
   },
 
