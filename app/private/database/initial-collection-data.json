@@ -151,26 +151,27 @@
       "contents": [
         {
           "name": "League of Legends",
-          "picture": "",
-          "description": "",
+          "picture": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg",
+          "description": "This is league of legends game description",
           "tags": [
-            ""
+            "MOBA",
+            "Multiplayer"
           ]
         },
         {
           "name": "Maplestory",
-          "picture": "",
-          "description": "",
+          "picture": "http://nxcache.nexon.net/all/v1.5.2/img/gnt/games-dropdown/maplestory.jpg",
+          "description": "Maple story?!",
           "tags": [
-            ""
+            "MMORPG"
           ]
         },
         {
           "name": "World of Warcraft",
-          "picture": "",
-          "description": "",
+          "picture": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-285x380.jpg",
+          "description": "WOW",
           "tags": [
-            ""
+            "MMORPG"
           ]
         },
         {

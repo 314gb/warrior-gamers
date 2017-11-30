@@ -1,27 +1,31 @@
 <template name="Game_List">
 
   <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
-    <div class="image">
-      <img src="{{game.picture}}">
+    <div class="image" >
+      <img class="Medium ui image" style="height:400px" src="{{game.picture}}">
     </div>
+
     <div class="content">
       <a class="header">
       {{game.name}}
       </a>
+
       <div class="description">
         {{game.description}}
       </div>
-    </div>
+
+
     <div style="margin-top: 10px">
       {{#each Tags in game.tags}}
       <a style="margin-bottom: 2px;" class="ui teal tag small label">{{Tags}}</a>
       {{/each}}
     </div>
+    </div>
 
-    <div class="content">
+    <div class="extra content" style="height: 50px">
       <a>
         <i class="user icon"></i>
-        22 Tagged
+        22 Tagged {{tagged}}
       </a>
     </div>
   </div>
