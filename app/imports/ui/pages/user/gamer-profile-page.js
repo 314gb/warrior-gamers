@@ -7,6 +7,7 @@ import { Games } from '/imports/api/interest/GameCollection';
 import { HTTP } from 'meteor/http';
 import { Meteor } from 'meteor/meteor'
 
+
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
@@ -101,5 +102,5 @@ Template.Gamer_Profile_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
-}
+  },
 });

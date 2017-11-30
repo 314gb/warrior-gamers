@@ -1,0 +1,38 @@
+<template name="Add_Game_Page">
+
+  {{#if Template.subscriptionsReady}}
+    <div class="ui text container segment">
+      <div style="border-color: green; color: darkgreen" class="ui dividing header">
+        Add a game to the database!
+      </div>
+      <form class="ui equal width form game-data-form {{ successClass }} {{ errorClass }}">
+
+        <div class="fields">
+          {{> Text_Form_Control label="Name" placeholder="Game Name" value=game.name errorMessage=(fieldError "name")}}
+        </div>
+
+        <div class="field">
+          {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=game.picture errorMessage=(fieldError "picture")}}
+        </div>
+
+        {{> TextArea_Form_Control label="Description" value=game.description placeholder="Short Description" errorMessage=(fieldError "description")}}
+
+        <div class="field">
+          {{> Select_Form_Control label="Tags" options=tags errorMessage=(fieldError "tags") multiple=true }}
+        </div>
+
+        <button style="background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
+          <div style="font-size: 20px; padding-left: 10px; color: green;" class="visible content">Submit!</div>
+          <div style="font-size: 25px; padding-left: 5px; padding-top: 5px;" class="hidden content">
+            <i class="user icon"></i>
+          </div>
+        </button>
+        {{#if displaySuccessMessage}}
+          <div class="ui success message">
+            <p>Game data successfully added.</p>
+          </div>
+        {{/if}}
+      </form>
+    </div>
+  {{/if}}
+</template>

@@ -4,6 +4,8 @@ import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
 import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection';
 import { Games } from '/imports/api/interest/GameCollection';
+import { Events } from '/imports/api/interest/EventCollection';
+import { Tags } from '/imports/api/interest/TagsCollection';
 
 /* global Assets */
 
@@ -31,7 +33,7 @@ function restoreCollection(collection, restoreJSON) {
 
 Meteor.startup(() => {
   /** Only initialize database if it's empty. */
-  const collectionList = [Interests, Profiles, Games, GamerProfiles];
+  const collectionList = [Interests, Profiles, Games, GamerProfiles, Events, Tags];
   const totalDocuments = _.reduce(collectionList, function reducer(memo, collection) {
     return memo + collection.count();
   }, 0);

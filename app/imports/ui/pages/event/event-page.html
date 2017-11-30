@@ -1,59 +1,12 @@
 <template name="Event_Page">
+  {{#if Template.subscriptionsReady}}
     <div class="ui centered header" style="font-size: 30px">
-        Events happening in campus
+      Events happening in campus
     </div>
-    <div class="ui container">
-        <div class="ui divided items">
-
-            <div class="item" style="background-color: #AAF8AC;border: 1px solid green;">
-                <div class="image">
-                    <img src="https://i.ytimg.com/vi/w6oJumrnngo/maxresdefault.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">League of Legends - one on one </a>
-                    <div class="meta">
-                        <span class="cinema">11/20/2018 at Campus Center</span>
-                    </div>
-                    <div class="description">
-                        <p>$5 dollars entry fee, each win = $5 cash price</p>
-                    </div>
-                    <div class="extra">
-                        <div class="ui right floated primary button">
-                            Sign up
-                            <i class="right chevron icon"></i>
-                        </div>
-                        <div class="ui label">League of Legends</div>
-                        <div class="ui label">Additional fees</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" style="background-color: #AAF8AC;border: 1px solid green;">
-                <div class="image">
-                    <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/jr/JRS4ZKRQNCIX1507075198191.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">Hearthstone - Fireside Gathering</a>
-                    <div class="meta">
-                        <span class="cinema">11/21/2019 at Campus Center</span>
-                    </div>
-                    <div class="description">
-                        <p>
-                            Get together with friends old and new to play Hearthstone.
-                            Participate in a Fireside Gathering, and the special Fireside card back will be added to your collection.
-                        </p>
-                    </div>
-                    <div class="extra">
-                        <div class="ui right floated primary button">
-                            Sign up
-                            <i class="right chevron icon"></i>
-                        </div>
-                        <div class="ui label">Hearthstone</div>
-                        <div class="ui label">Casual</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="ui divided items">
+      {{#each event in events }}
+        {{> Event_List event=event }}
+      {{/each}}
     </div>
+  {{/if}}
 </template>

@@ -84,11 +84,19 @@ userRoutes.route('/filter', {
 });
 
 
-export const addPageRouteName = 'Add_Page';
-userRoutes.route('/add', {
-  name: addPageRouteName,
+export const addEventPageRouteName = 'Add_Event_Page';
+userRoutes.route('/addEvent', {
+  name: addEventPageRouteName,
   action() {
-    BlazeLayout.render('User_Layout', { main: addPageRouteName });
+    BlazeLayout.render('User_Layout', { main: addEventPageRouteName });
+  },
+});
+
+export const addGamePageRouteName = 'Add_Game_Page';
+userRoutes.route('/addGame', {
+  name: addGamePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: addGamePageRouteName });
   },
 });
 

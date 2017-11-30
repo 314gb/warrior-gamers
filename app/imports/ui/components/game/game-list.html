@@ -1,22 +1,32 @@
 <template name="Game_List">
-
-  <div class="card">
-    <div class="content">
-      <img class="ui image" src="{{ profile.picture }}">
+  <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
+    <div class="image" >
+      <img class="Medium ui image" style="height:400px" src="{{game.picture}}">
     </div>
-      <div class="header">
-        {{ profile.firstName }} {{ profile.lastName }}
-      </div>
-      <div class="meta">
-        {{ profile.bio }}
-      </div>
+
+    <div class="content">
+      <a class="header">
+      {{game.name}}
+      </a>
+
       <div class="description">
-        {{ profile.bio }}
+        {{game.description}}
       </div>
-      <div style="margin-top: 10px">
-        {{#each interest in profile.interests}}
-          <a style="margin-bottom: 2px" class="ui teal tag small label">{{interest}}</a>
-        {{/each}}
-      </div>
+
+
+    <div style="margin-top: 10px">
+      {{#each Tags in game.tags}}
+      <a style="margin-bottom: 2px;" class="ui teal tag small label">{{Tags}}</a>
+      {{/each}}
+    </div>
+    </div>
+
+    <div class="extra content" style="height: 50px">
+      <a>
+        <i class="user icon"></i>
+        22 Tagged {{tagged}}
+      </a>
+    </div>
   </div>
+
 </template>

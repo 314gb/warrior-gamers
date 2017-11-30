@@ -5,57 +5,60 @@ import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { Tracker } from 'meteor/tracker';
 
-/** @module Games */
+/** @module Interest */
 
 /**
- * Represents a specific game, such as "League of Legends".
+ * Represents a specific interest, such as "Software Engineering".
  * @extends module:Base~BaseCollection
  */
-class GameCollection extends BaseCollection {
+class EventCollection extends BaseCollection {
 
   /**
-   * Creates the Game collection.
+   * Creates the Event collection.
    */
   constructor() {
-    super('Game', new SimpleSchema({
+    super('Event', new SimpleSchema({
       name: { type: String },
-      picture: { type: SimpleSchema.RegEx.Url, optional: true },
+      date: { type: String },
+      location: { type: String },
+      games: { type: Array, optional: true },
+      'games.$': { type: String },
       description: { type: String, optional: true },
-      tags: { type: Array, optional: true },
-      'tags.$': { type: String },
     }, { tracker: Tracker }));
   }
 
   /**
-   * Defines a new Game.
+   * Defines a new Event.
    * @example
-   * Games.define({ name: 'League of Legends',
-   *                    description: 'MOBA game called League of Legends' });
+   * Games.define({ name: 'League of Legends Tournament',
+   *                    description: 'A League of Legends tournament' });
    * @param { Object } description Object with keys name and description.
    * Name must be previously undefined. Description is optional.
    * Creates a "slug" for this name and stores it in the slug field.
    * @throws {Meteor.Error} If the interest definition includes a defined name.
    * @returns The newly created docID.
    */
-  define({ name, picture, description, tags }) {
+  define({ name, date, location, games, description }) {
     check(name, String);
+    check(date, String);
+    check(location, String);
+    check(games, Array);
     check(description, String);
-    check(picture, String);
     if (this.find({ name }).count() > 0) {
-      throw new Meteor.Error(`${name} is previously defined in another Game`);
+      throw new Meteor.Error(`${name} is previously defined in another Event`);
     }
-    return this._collection.insert({ name, description, picture, tags });
+    return this._collection.insert({ name, date, location, games, description });
   }
 
   /**
    * Returns the Game name corresponding to the passed game docID.
-   * @param gameID An interest docID.
+   * @param eventID An interest docID.
    * @returns { String } An game name.
    * @throws { Meteor.Error} If the game docID cannot be found.
    */
-  findName(gameID) {
-    this.assertDefined(gameID);
-    return this.findDoc(gameID).name;
+  findName(eventID) {
+    this.assertDefined(eventID);
+    return this.findDoc(eventID).name;
   }
 
   /**
@@ -64,8 +67,8 @@ class GameCollection extends BaseCollection {
    * @returns { Array }
    * @throws { Meteor.Error} If any of the instanceIDs cannot be found.
    */
-  findNames(gameIDs) {
-    return gameIDs.map(gameID => this.findName(gameID));
+  findNames(eventIDs) {
+    return eventIDs.map(eventID => this.findName(eventID));
   }
 
   /**
@@ -113,14 +116,15 @@ class GameCollection extends BaseCollection {
   dumpOne(docID) {
     const doc = this.findDoc(docID);
     const name = doc.name;
+    const date = doc.date;
+    const location = doc.location;
+    const games = doc.games;
     const description = doc.description;
-    const picture = doc.picture;
-    const tags = doc.tags;
-    return { name, description, picture, tags };
+    return { name, date, location, games, description };
   }
 }
 
 /**
  * Provides the singleton instance of this class to all other entities.
  */
-export const Games = new GameCollection();
+export const Events = new EventCollection();

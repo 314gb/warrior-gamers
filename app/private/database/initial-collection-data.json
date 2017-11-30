@@ -151,67 +151,132 @@
       "contents": [
         {
           "name": "League of Legends",
-          "description": ""
+          "picture": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg",
+          "description": "This is league of legends game description",
+          "tags": [
+            "MOBA",
+            "Multiplayer"
+          ]
         },
         {
           "name": "Maplestory",
-          "description": ""
+          "picture": "http://nxcache.nexon.net/all/v1.5.2/img/gnt/games-dropdown/maplestory.jpg",
+          "description": "Maple story?!",
+          "tags": [
+            "MMORPG"
+          ]
         },
         {
           "name": "World of Warcraft",
-          "description": ""
+          "picture": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-285x380.jpg",
+          "description": "WOW",
+          "tags": [
+            "MMORPG"
+          ]
         },
         {
           "name": "Runescape",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Hearthstone",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Overwatch",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Combat Arms",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Diablo",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Mario Kart",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "PUBG",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Terraria",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Counter Strike",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Rust",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Grand Chase",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Splash Fighters",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         },
         {
           "name": "Gunbound",
-          "description": ""
+          "picture": "",
+          "description": "",
+          "tags": [
+            ""
+          ]
         }
       ]
     },
@@ -222,14 +287,14 @@
           "firstName": "Tevin",
           "lastName": "Sales",
           "username": "salest2"
-      },
-      {
+        },
+        {
           "firstName":"Kalani",
           "lastName":"Sanidad",
           "username":"ksanidad",
           "picture": "/images/lau.jpg",
           "bio":"LOL gg fam",
-          "interests": [
+          "games": [
             "Gunbound",
             "League of Legends",
             "Rust"
@@ -237,8 +302,108 @@
           "steam":"kaisuke23",
           "blizzard":"",
           "league":"kaisuke23"
-
-      }
+        }
+      ]
+    },
+    {
+      "name": "TagsCollection",
+      "contents": [
+        {
+          "name": "MMORPG",
+          "description": ""
+        },
+        {
+          "name": "FPS",
+          "description": ""
+        },
+        {
+          "name": "Fighting",
+          "description": ""
+        },
+        {
+          "name": "Indie",
+          "description": ""
+        },
+        {
+          "name": "Trading Card",
+          "description": ""
+        },
+        {
+          "name": "Adventure",
+          "description": ""
+        },
+        {
+          "name": "Action",
+          "description": ""
+        },
+        {
+          "name": "Single Player",
+          "description": ""
+        },
+        {
+          "name": "Multiplayer",
+          "description": ""
+        },
+        {
+          "name": "Strategy",
+          "description": ""
+        },
+        {
+          "name": "Simulation",
+          "description": ""
+        },
+        {
+          "name": "RPG",
+          "description": ""
+        },
+        {
+          "name": "Free to Play",
+          "description": ""
+        },
+        {
+          "name": "Sports",
+          "description": ""
+        },
+        {
+          "name": "Horror",
+          "description": ""
+        },
+        {
+          "name": "Puzzle",
+          "description": ""
+        },
+        {
+          "name": "MOBA",
+          "description": ""
+        },
+        {
+          "name": "Dungeon Crawler",
+          "description": ""
+        },
+        {
+          "name": "Local Multiplayer",
+          "description": ""
+        },
+        {
+          "name": "Platformer",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "EventCollection",
+      "contents": [
+        {
+          "name": "Super Mario Bros Tournament",
+          "date": "12/12/12",
+          "location": "POST 127",
+          "games": [
+            "Gunbound",
+            "League of Legends",
+            "Rust"
+          ],
+          "description": "Hello, my name is Sae!"
+        }
       ]
     }
   ]
