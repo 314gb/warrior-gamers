@@ -42,12 +42,18 @@ Template.Add_Event_Page.events({
     event.preventDefault();
     const name = event.target.Name.value;
     const date = event.target.Date.value;
+    const time = event.target.Time.value;
+    const phone = event.target.Phone.value;
+    let picture = event.target.Picture.value;
     const location = event.target.Location.value;
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
     const description = event.target.Description.value;
 
-    const eventData = { name, date, location, games, description };
+    if (picture === '') {
+      picture = 'http://www.bestmachine.online/uploads/42/1024px-No_image_available.svg.png';
+    }
+    const eventData = { name, date, time, phone, location, picture, games, description };
 
     instance.context.reset();
     const cleanData = Events.getSchema().clean(eventData);

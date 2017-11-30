@@ -3,10 +3,12 @@
     <div class="ui centered header" style="font-size: 30px">
       Events happening in campus
     </div>
-    <div class="ui divided items">
-      {{#each event in events }}
-        {{> Event_List event=event }}
-      {{/each}}
+    <div class="ui container">
+      <div class="ui divided items">
+        {{#each event in events }}
+          {{> Event_List event=event }}
+        {{/each}}
+      </div>
     </div>
   {{/if}}
 </template>
