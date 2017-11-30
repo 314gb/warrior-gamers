@@ -21,6 +21,7 @@ class EventCollection extends BaseCollection {
       name: { type: String },
       date: { type: String },
       location: { type: String },
+      picture: { type: SimpleSchema.RegEx.Url, optional: true },
       games: { type: Array, optional: true },
       'games.$': { type: String },
       description: { type: String, optional: true },
@@ -38,16 +39,17 @@ class EventCollection extends BaseCollection {
    * @throws {Meteor.Error} If the interest definition includes a defined name.
    * @returns The newly created docID.
    */
-  define({ name, date, location, games, description }) {
+  define({ name, date, location, picture, games, description }) {
     check(name, String);
     check(date, String);
     check(location, String);
+    check(picture, String);
     check(games, Array);
     check(description, String);
     if (this.find({ name }).count() > 0) {
       throw new Meteor.Error(`${name} is previously defined in another Event`);
     }
-    return this._collection.insert({ name, date, location, games, description });
+    return this._collection.insert({ name, date, location, picture, games, description });
   }
 
   /**
@@ -118,9 +120,10 @@ class EventCollection extends BaseCollection {
     const name = doc.name;
     const date = doc.date;
     const location = doc.location;
+    const picture = doc.picture;
     const games = doc.games;
     const description = doc.description;
-    return { name, date, location, games, description };
+    return { name, date, location, picture, games, description };
   }
 }
 
