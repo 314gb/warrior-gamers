@@ -4,6 +4,8 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { GamerProfiles } from '/imports/api/profile/GamerProfileCollection';
 import { Games } from '/imports/api/interest/GameCollection';
+import { HTTP } from 'meteor/http';
+import { Meteor } from 'meteor/meteor'
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
@@ -38,25 +40,30 @@ Template.Gamer_Profile_Page.helpers({
               return { label: game.name, selected: _.contains(selectedGames, game.name) };
             });
   },
-  leagueRequest(){
-      const profile = GamerProfiles.findDoc(FlowRouter.getParam('username'));
-      var request ="https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/";
-      var apiAppender = "?api_key=";
-      var LeagueKey = "RGAPI-e70c7224-04f4-4a97-a374-de1970a4a89b";
 
-      var letsSee = request + profile.league + apiAppender + LeagueKey;
-
-    //   console.log(letsSee);
-      var xhr = new XMLHttpRequest({mozSystem: true});
-      //
-      xhr.open("GET", letsSee, false);
-      xhr.send();
-      //
-      console.log(xhr.status);
-      console.log(xhr.statusText);
-      var resp = xhr.responseText;
-      console.log(resp);
+  opGG(){
+    const profile = GamerProfiles.findDoc(FlowRouter.getParam('username'));
+    const opGGER = 'http://na.op.gg/summoner/userName='
+    return opGGER +  profile.league;
   },
+
+  leagueRequest(){
+    //   const profile = GamerProfiles.findDoc(FlowRouter.getParam('username'));
+    //   var request ='https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/';
+    //   var apiAppender = '?api_key=';
+    //   var LeagueKey = 'RGAPI-8dc6f01d-8551-48a2-85d1-7d70ceea51f5';
+      //
+    //   var letsSee = request + profile.league;
+    var resultGotten = [];
+    // if (Meteor.isClient) {
+        resultGotten =  Meteor.call("leagueSearch");
+        // , function(error, results) {
+        //     // console.log(results.content);
+        // }
+        console.log(resultGotten);
+
+    // }
+    },
 });
 
 

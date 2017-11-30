@@ -59,17 +59,25 @@
 
      <div class = "ui dividing header">
      <p>Your Profile: {{profile.firstName}} {{profile.lastName}}</p>
+     <hr>
+     Bio
+     <br>
      {{profile.bio}}
      {{leagueRequest}}
      </div>
-
+     <div id = "gamesDiv">
+         <hr>
+        Your games:
+        <br>
+    </div>
      <div class = "ui three column divided grid">
          <div class = "row">
              <div class = "column">
                  This is your Steam Name {{profile.steam}}
          </div>
              <div class = "column">
-                 This is your league Summoner name {{profile.league}}
+                 This is your league Summoner name <a href = {{opGG}}> {{profile.league}} </a>
+                 Your League level is {{leagueRequest}}
          </div>
          <div class = "column">
              This is your Battle Tag {{profile.blizzard}}
