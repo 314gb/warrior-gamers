@@ -58,26 +58,28 @@
   <div class="active ui tab segment " data-tab = "view_profile" id = "view_profile">
 
      <div class = "ui dividing header">
-     <p>Your Profile: {{profile.firstName}} {{profile.lastName}}</p>
+     <p>Player: {{profile.firstName}} {{profile.lastName}}</p>
      <hr>
-     Bio
+     <p>Bio:
      <br>
      {{profile.bio}}
-     {{leagueRequest}}
+     </p>
      </div>
      <div id = "gamesDiv">
-         <hr>
-        Your games:
-        <br>
+        <p>Your games:
+            {{#each gamesReturned}}
+                <div class="ui green label">{{this}}</div>
+            {{/each}}
+        </p>
+        <hr>
     </div>
      <div class = "ui three column divided grid">
          <div class = "row">
              <div class = "column">
-                 This is your Steam Name {{profile.steam}}
+                 This is your Steam Name <a href={{steamNamerGive}}>{{profile.steam}}</a>
          </div>
              <div class = "column">
-                 This is your league Summoner name <a href = {{opGG}}> {{profile.league}} </a>
-                 Your League level is {{leagueRequest}}
+                 This is your league Summoner Stats: <a href = {{opGG}}> {{profile.league}} </a>
          </div>
          <div class = "column">
              This is your Battle Tag {{profile.blizzard}}
@@ -90,3 +92,6 @@
 </div>
   {{/if}}
 </template>
+
+<!-- <template name = "gamesInProfile">
+</template> -->

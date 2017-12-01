@@ -8,6 +8,9 @@
 #view_profile .column{
     color: darkgreen;
 }
-#gameDiv{
+#gameDiv p{
+    color: darkgreen;
+}
+#gameDiv div {
     color: darkgreen;
 }

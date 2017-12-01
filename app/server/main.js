@@ -6,9 +6,17 @@ import { Meteor } from 'meteor/meteor'
 
 if(Meteor.isServer){
     Meteor.methods({
-        leagueSearch: function () {
+        leagueSearch: function (url) {
             this.unblock();
-            return Meteor.http.call("GET", "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/kaisuke23?api_key=RGAPI-8dc6f01d-8551-48a2-85d1-7d70ceea51f5");
+            returnArray = Meteor.http.call("GET", url);
+            console.log(returnArray.statusCode);
+            if(returnArray.statusCode == 200){
+                for( a in returnArray){
+                    console.log(a);
+                }
+                console.log(returnArray.data.id);
+                return returnArray.data;
+            }
         }
     });
 }
