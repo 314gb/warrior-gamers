@@ -60,3 +60,7 @@ input#First::placeholder, input#Last::placeholder, input#Title::placeholder, inp
 textarea#Bio::placeholder {
   color: darkgreen;
 }
+.ui.simple.dropdown.item:hover {
+  background-color: lightgreen;
+  color: green;
+}

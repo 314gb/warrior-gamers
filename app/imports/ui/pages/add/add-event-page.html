@@ -12,10 +12,13 @@
         </div>
 
         <div class="field">
-          {{> Text_Form_Control label="Date" placeholder="XX/XX/XXXX" value=event.date errorMessage=(fieldError "date")}}
+          {{> Text_Form_Control label="Picture" placeholder="Picture" value=event.picture errorMessage=(fieldError "picture")}}
         </div>
 
-        <div class="field">
+        <div class="fields">
+          {{> Text_Form_Control label="Date" placeholder="XX/XX/XXXX" value=event.date errorMessage=(fieldError "date")}}
+          {{> Text_Form_Control label="Time" placeholder="XX:XX = XX:XX" value=event.time errorMessage=(fieldError "time")}}
+          {{> Text_Form_Control label="Phone" placeholder="XXX-XXX-XXXX" value=event.phone errorMessage=(fieldError "phone")}}
           {{> Text_Form_Control label="Location" placeholder="Location" value=event.location errorMessage=(fieldError "location")}}
         </div>
 

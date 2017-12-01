@@ -1,5 +1,5 @@
 <template name="Game_List">
-  <div class="card" style="background-color: #AAF8AC; border: 1px solid green;">
+  <div class="card" style="border: 5px outset green; background-color: #AAF8AC;">
     <div class="image" >
       <img class="Medium ui image" style="height:400px" src="{{game.picture}}">
     </div>
@@ -16,7 +16,7 @@
 
     <div style="margin-top: 10px">
       {{#each Tags in game.tags}}
-      <a style="margin-bottom: 2px;" class="ui teal tag small label">{{Tags}}</a>
+      <a style="margin-bottom: 2px;" class="ui green label">{{Tags}}</a>
       {{/each}}
     </div>
     </div>

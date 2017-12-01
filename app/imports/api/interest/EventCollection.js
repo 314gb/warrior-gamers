@@ -20,7 +20,10 @@ class EventCollection extends BaseCollection {
     super('Event', new SimpleSchema({
       name: { type: String },
       date: { type: String },
+      time: { type: String },
+      phone: { type: String },
       location: { type: String },
+      picture: { type: SimpleSchema.RegEx.Url, optional: true },
       games: { type: Array, optional: true },
       'games.$': { type: String },
       description: { type: String, optional: true },
@@ -38,16 +41,19 @@ class EventCollection extends BaseCollection {
    * @throws {Meteor.Error} If the interest definition includes a defined name.
    * @returns The newly created docID.
    */
-  define({ name, date, location, games, description }) {
+  define({ name, date, time, phone, location, picture, games, description }) {
     check(name, String);
     check(date, String);
+    check(time, String);
+    check(phone, String);
     check(location, String);
+    check(picture, String);
     check(games, Array);
     check(description, String);
     if (this.find({ name }).count() > 0) {
       throw new Meteor.Error(`${name} is previously defined in another Event`);
     }
-    return this._collection.insert({ name, date, location, games, description });
+    return this._collection.insert({ name, date, time, phone, location, picture, games, description });
   }
 
   /**
@@ -117,10 +123,13 @@ class EventCollection extends BaseCollection {
     const doc = this.findDoc(docID);
     const name = doc.name;
     const date = doc.date;
+    const time = doc.time;
+    const phone = doc.phone;
     const location = doc.location;
+    const picture = doc.picture;
     const games = doc.games;
     const description = doc.description;
-    return { name, date, location, games, description };
+    return { name, date, time, phone, location, picture, games, description };
   }
 }
 

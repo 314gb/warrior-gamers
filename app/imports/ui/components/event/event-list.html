@@ -1,20 +1,22 @@
 <template name="Event_List">
   <div class="ui divided items">
-    <div class="item">
+    <div class="item" style="background-color: lightgreen; border: 5px outset green; border-radius: 4px;">
       <div class="image">
-        <img class="small ui image" src="{{event.picture}}">
+        <img style="width:100%; height: 100%;" class="small ui image" src="{{event.picture}}" alt="{{event.picture}}">
       </div>
-      <div class="content">
-        <a class="header">12 Years a Slave</a>
+      <div class="content" style="padding: 10px 0 10px 20px;">
+        <a class="header">{{event.name}}</a>
         <div class="meta">
-          <span class="cinema">Union Square 14</span>
+          <span class="cinema">Location: {{event.location}}</span>
+          <span class="cinema">Time: {{event.time}}</span>
         </div>
         <div class="description">
-          <p></p>
+          <p>{{event.description}}</p>
         </div>
         <div class="extra">
-          <div class="ui label">IMAX</div>
-          <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+          {{#each games in event.games}}
+          <div class="ui green label">{{games}}</div>
+          {{/each}}
         </div>
       </div>
     </div>
