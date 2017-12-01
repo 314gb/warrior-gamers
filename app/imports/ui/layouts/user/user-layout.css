@@ -61,6 +61,5 @@ textarea#Bio::placeholder {
   color: darkgreen;
 }
 .ui.simple.dropdown.item:hover {
-  background-color: lightgreen;
-  color: green;
+  border-bottom: none;
 }
