@@ -42,6 +42,7 @@
   background-color: #AAF8AC !important;
   border-color: green !important;
   color: green !important;
+  width: 100% !important;:
 }
 
 .default.text {
@@ -57,9 +58,11 @@
 input#First::placeholder, input#Last::placeholder, input#Title::placeholder, input#Picture::placeholder, input#Steam::placeholder, input#Blizzard::placeholder, input#LoL::placeholder, input#Date::placeholder, input#Name::placeholder, input#Location::placeholder, input#Event::placeholder {
   color: darkgreen;
 }
+
 textarea#Bio::placeholder {
   color: darkgreen;
 }
+
 .ui.simple.dropdown.item:hover {
   border-bottom: none;
 }
