@@ -1,16 +1,16 @@
 #view_profile{
-    background-color: #AAF8AC;
+  background: linear-gradient(to bottom right, white, darkgreen,darkgreen) !important;;
     border: 1px solid green
 }
 #view_profile p{
-    color: darkgreen;
+    color: black;
 }
 #view_profile .column{
-    color: darkgreen;
+    color: whitesmoke;
 }
 #gameDiv p{
-    color: darkgreen;
+    color: black;
 }
 #gameDiv div {
-    color: darkgreen;
+    color: whitesmoke;
 }
