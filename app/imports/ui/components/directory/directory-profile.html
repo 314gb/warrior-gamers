@@ -1,5 +1,45 @@
 <template name="Directory_Profile">
 
+  <div class="card" style="max-width: 300px; border: 5px outset green; background-color: #AAF8AC;">
+    <div class="content">
+      <div class="image" >
+        <img class="medium ui image" style="width: 100%; height:250px" src="{{profile.picture}}">
+      </div>
+
+      <div style="padding-top: 15px; color: darkgreen; font-color: green" class="left aligned header">
+        {{ profile.firstName }} {{ profile.lastName }}
+        <hr COLOR="green">
+      </div>
+
+      <div style="color: green; font-color: green" class="description">
+        Biography: {{ profile.bio }}
+      </div>
+
+      <div style="color: green; font-color: green; margin-top: 15px">
+        {{#each games in profile.games}}
+          <a style="margin-bottom: 5px;" class="ui green label">{{games}}</a>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="extra content">
+      <div class="ui equal width center aligned grid">
+        <div class="column"><a href="mailto:{{ profile.username}}@hawaii.edu"><i class="big mail icon"></i></a></div>
+        {{#if profile.steam }}
+          <div class="column"><a href="https://steamcommunity.com/profiles/{{ profile.steam}}"><i class="big steam icon"></i></a></div>
+        {{/if}}
+        {{#if profile.blizzard }}
+          <div class="column"><a href="https://facebook.com/{{ profile.blizzard}}"><i class="big facebook icon"></i></a></div>
+        {{/if}}
+        {{#if profile.league }}
+          <div class="column"><a href="https://instagram.com/{{ profile.league}}"><i class="big instagram icon"></i></a></div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+
+</template>
+<!--
   <div style="border: 1px solid green; background-color: #AAF8AC;" class="card">
     <div style="color: green; font-color: green" class="content">
       <img class="right floated mini ui image" src="{{ profile.picture }}">
@@ -25,14 +65,13 @@
         {{#if profile.steam }}
           <div class="column"><a href="https://steamcommunity.com/profiles/{{ profile.steam}}"><i class="big steam icon"></i></a></div>
         {{/if}}
-        {{#if profile.blizzard }}
+  {{#if profile.blizzard }}
           <div class="column"><a href="https://facebook.com/{{ profile.blizzard}}"><i class="big facebook icon"></i></a></div>
         {{/if}}
-        {{#if profile.league }}
+  {{#if profile.league }}
           <div class="column"><a href="https://instagram.com/{{ profile.league}}"><i class="big instagram icon"></i></a></div>
         {{/if}}
       </div>
     </div>
   </div>
-
-</template>
+-->

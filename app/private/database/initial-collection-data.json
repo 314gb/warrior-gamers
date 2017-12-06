@@ -153,6 +153,7 @@
           "name": "League of Legends",
           "picture": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg",
           "description": "This is league of legends game description",
+          "link": "https://na.leagueoflegends.com/",
           "tags": [
             "MOBA",
             "Multiplayer"
@@ -162,6 +163,7 @@
           "name": "Maplestory",
           "picture": "http://nxcache.nexon.net/all/v1.5.2/img/gnt/games-dropdown/maplestory.jpg",
           "description": "Maple story?!",
+          "link": "http://maplestory.nexon.net/",
           "tags": [
             "MMORPG"
           ]
@@ -170,6 +172,7 @@
           "name": "World of Warcraft",
           "picture": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-285x380.jpg",
           "description": "WOW",
+          "link": "",
           "tags": [
             "MMORPG"
           ]
@@ -178,6 +181,7 @@
           "name": "Runescape",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -186,6 +190,7 @@
           "name": "Hearthstone",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -194,6 +199,7 @@
           "name": "Overwatch",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -202,6 +208,7 @@
           "name": "Combat Arms",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -210,6 +217,7 @@
           "name": "Diablo",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -218,6 +226,7 @@
           "name": "Mario Kart",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -226,6 +235,7 @@
           "name": "PUBG",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -234,6 +244,7 @@
           "name": "Terraria",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -242,6 +253,7 @@
           "name": "Counter Strike",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -250,6 +262,7 @@
           "name": "Rust",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -258,6 +271,7 @@
           "name": "Grand Chase",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -266,6 +280,7 @@
           "name": "Splash Fighters",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
@@ -274,6 +289,7 @@
           "name": "Gunbound",
           "picture": "",
           "description": "",
+          "link": "",
           "tags": [
             ""
           ]
