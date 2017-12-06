@@ -25,7 +25,7 @@
   <div class="{{#if required}}required{{/if}} field">
     <label style="font-weight: 400; font-size: 30px; color: darkgreen;"></label>
     <select multiple="{{multiple}}" class="ui dropdown" name="{{#if name}}{{name}}{{else}}{{label}}{{/if}}">
-      <option value="">({{#if multiple}}Tags, Games, and Events{{else}}{{/if}})</option>
+      <option value="">({{#if multiple}}Tags & Games{{else}}{{/if}})</option>
       {{#each option in options}}
         <option value="{{#if option.value}}{{option.value}}{{else}}{{option.label}}{{/if}}"
                 selected="{{option.selected}}">{{option.label}}</option>
