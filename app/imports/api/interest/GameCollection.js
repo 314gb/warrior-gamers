@@ -22,7 +22,7 @@ class GameCollection extends BaseCollection {
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       description: { type: String, optional: true },
       link: { type: String, optional: true },
-      tags: { type: Array, optional: true },
+      tags: { type: Array, optional: false },
       'tags.$': { type: String },
     }, { tracker: Tracker }));
   }

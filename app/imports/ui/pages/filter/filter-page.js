@@ -24,6 +24,16 @@ Template.Filter_Page.onCreated(function onCreated() {
 });
 
 Template.Filter_Page.helpers({
+  games() {
+    // Initialize selectedInterests to all of them if messageFlags is undefined.
+    if (!Template.instance().messageFlags.get(selectedInterestsKey)) {
+      Template.instance().messageFlags.set(selectedInterestsKey, _.map(Tags.findAll(), tag => tag.name));
+    }
+    // Find all profiles with the currently selected interests.
+    const allGames = Games.findAll();
+    const selectedInterests = Template.instance().messageFlags.get(selectedInterestsKey);
+    return _.filter(allGames, game => _.intersection(game.tags, selectedInterests).length > 0);
+  },
   profiles() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
     if (!Template.instance().messageFlags.get(selectedInterestsKey)) {
@@ -44,11 +54,20 @@ Template.Filter_Page.helpers({
     const selectedInterests = Template.instance().messageFlags.get(selectedInterestsKey);
     return _.filter(allEvents, event => _.intersection(event.games, selectedInterests).length > 0);
   },
-  games() {
+  gameList() {
     return _.map(Games.findAll(),
         function makeInterestObject(game) {
           return {
             label: game.name,
+            // selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
+          };
+        });
+  },
+  tagList() {
+    return _.map(Tags.findAll(),
+        function makeInterestObject(tag) {
+          return {
+            label: tag.name,
             // selected: _.contains(Template.instance().messageFlags.get(selectedInterestsKey), interest.name),
           };
         });
@@ -59,6 +78,11 @@ Template.Filter_Page.events({
   'submit .filter-data-form'(event, instance) {
     event.preventDefault();
     const selectedOptions = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
+    instance.messageFlags.set(selectedInterestsKey, _.map(selectedOptions, (option) => option.value));
+  },
+  'submit .filter-tag-form'(event, instance) {
+    event.preventDefault();
+    const selectedOptions = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     instance.messageFlags.set(selectedInterestsKey, _.map(selectedOptions, (option) => option.value));
   },
 });
