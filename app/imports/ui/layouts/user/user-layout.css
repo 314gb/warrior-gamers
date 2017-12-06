@@ -39,9 +39,12 @@
 }
 
 .ui.dropdown.selection.multiple {
+
   background: linear-gradient(to bottom right, darkgreen, black) !important;
   border-color: black !important;
   color: darkgreen !important;
+  width: 100% !important;:
+
 }
 
 .default.text {
@@ -57,9 +60,15 @@
 input#First::placeholder, input#Last::placeholder, input#Title::placeholder, input#Picture::placeholder, input#Steam::placeholder, input#Blizzard::placeholder, input#LoL::placeholder, input#Date::placeholder, input#Name::placeholder, input#Location::placeholder, input#Event::placeholder {
   color: darkgreen;
 }
+
 textarea#Bio::placeholder {
   color: whitesmoke;
 }
+
+textarea#Description::placeholder {
+  color: darkgreen;
+}
+
 .ui.simple.dropdown.item:hover {
   border-bottom: whitesmoke;
 }

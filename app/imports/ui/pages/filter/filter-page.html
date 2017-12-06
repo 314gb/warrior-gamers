@@ -3,19 +3,17 @@
     <div style="margin-top: 20px" class="ui container">
 
       <form class="ui equal width form filter-data-form">
-        <div class="field">
+        <h1 style="text-align: center; color: whitesmoke">SEARCH FOR GAMES, PEOPLE, AND EVENTS!</h1>
+        <div class="fields">
           {{> Select_Form_Control label="Games" options=games multiple=true }}
-        </div>
-        <div style="text-align: center" class="wrapper">
-          <button style="background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
-            <div style="font-size: 20px; padding-left: 5px; color: green;" class="visible content">FIND MY BUDDY!</div>
+          <button style="margin-top: 4px; height: 39.88px; background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
+            <div style="font-size: 20px; padding-left: 5px; color: green;" class="visible content"><i class="search icon"></i></div>
             <div style="font-size: 25px; padding-top: 5px;" class="hidden content">
               <i class="users icon"></i>
             </div>
           </button>
         </div>
       </form>
-
       {{> Filter_Page_Directory profiles=profiles }}
 
     </div>
