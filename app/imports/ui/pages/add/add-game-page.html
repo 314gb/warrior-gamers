@@ -11,11 +11,15 @@
           {{> Text_Form_Control label="Name" placeholder="Game Name" value=game.name errorMessage=(fieldError "name")}}
         </div>
 
-        <div class="field">
+        <div class="fields">
           {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=game.picture errorMessage=(fieldError "picture")}}
+          {{> Text_Form_Control label="Link" placeholder="http://foo.com/" value=game.link errorMessage=(fieldError "link")}}
         </div>
 
-        {{> TextArea_Form_Control label="Description" value=game.description placeholder="Short Description" errorMessage=(fieldError "description")}}
+        <div class="field">
+          {{> TextArea_Form_Control label="Description" value=game.description placeholder="Short Description" errorMessage=(fieldError "description")}}
+        </div>
+
 
         <div class="field">
           {{> Select_Form_Control label="Tags" options=tags errorMessage=(fieldError "tags") multiple=true }}
