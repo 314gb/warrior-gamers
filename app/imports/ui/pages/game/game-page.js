@@ -26,12 +26,7 @@ Template.Game_Page.onCreated(function onCreated() {
 
 Template.Game_Page.helpers({
   games() {
-    // Initialize selectedInterests to all of them if messageFlags is undefined.
-<<<<<<< HEAD
-      // Find all profiles with the currently selected interests.
-    return Games.findAll();
-  },
-=======
+
     if (!Template.instance().messageFlags.get(selectedInterestsKey)) {
       //Template.instance().messageFlags.set(selectedInterestsKey, _.map(Tags.findAll(), tag => tag.name));
       return Games.findAll();
@@ -58,6 +53,5 @@ Template.Game_Page.events({
     const selectedOptions = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     instance.messageFlags.set(selectedInterestsKey, _.map(selectedOptions, (option) => option.value));
   },
->>>>>>> 34642c51398fb09934f4ac1748bbdd879e706fe9
 });
 
