@@ -19,9 +19,9 @@ class EventCollection extends BaseCollection {
   constructor() {
     super('Event', new SimpleSchema({
       name: { type: String },
-      date: { type: String },
-      time: { type: String },
-      phone: { type: String },
+      date: { type: String, regEx: /(\d+)(-|\/)(\d+)(?:-|\/)(?:(\d+)\s+(\d+):(\d+)(?::(\d+))?(?:\.(\d+))?)?/ },
+      time: { type: String, regEx: /^(10|11|12|[1-9]):[0-5][0-9]$/ },
+      phone: { type: String, regEx: /^\d{3}-\d{3}-\d{4}$/ },
       location: { type: String },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       games: { type: Array, optional: true },

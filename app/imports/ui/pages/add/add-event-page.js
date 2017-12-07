@@ -53,8 +53,8 @@ Template.Add_Event_Page.events({
     if (picture === '') {
       picture = 'http://www.bestmachine.online/uploads/42/1024px-No_image_available.svg.png';
     }
-    const eventData = { name, date, time, phone, location, picture, games, description };
 
+    const eventData = { name, date, time, phone, location, picture, games, description };
     instance.context.reset();
     const cleanData = Events.getSchema().clean(eventData);
     instance.context.validate(cleanData);
