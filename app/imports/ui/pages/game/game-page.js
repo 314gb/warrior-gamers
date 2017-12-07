@@ -11,12 +11,11 @@ Template.Game_Page.onCreated(function onCreated() {
   this.messageFlags = new ReactiveDict();
 });
 
+
 Template.Game_Page.helpers({
   games() {
     // Initialize selectedInterests to all of them if messageFlags is undefined.
-
-    // Find all profiles with the currently selected interests.
+      // Find all profiles with the currently selected interests.
     return Games.findAll();
   },
-
 });
