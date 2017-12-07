@@ -21,7 +21,8 @@ class GameCollection extends BaseCollection {
       name: { type: String },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
       description: { type: String, optional: true },
-      tags: { type: Array, optional: true },
+      link: { type: String, optional: true },
+      tags: { type: Array, optional: false },
       'tags.$': { type: String },
     }, { tracker: Tracker }));
   }
@@ -37,14 +38,16 @@ class GameCollection extends BaseCollection {
    * @throws {Meteor.Error} If the interest definition includes a defined name.
    * @returns The newly created docID.
    */
-  define({ name, picture, description, tags }) {
+  define({ name, picture, description, link, tags }) {
     check(name, String);
     check(description, String);
     check(picture, String);
+    check(link, String);
+    check(tags, Array);
     if (this.find({ name }).count() > 0) {
       throw new Meteor.Error(`${name} is previously defined in another Game`);
     }
-    return this._collection.insert({ name, description, picture, tags });
+    return this._collection.insert({ name, description, picture, link, tags });
   }
 
   /**
@@ -115,8 +118,9 @@ class GameCollection extends BaseCollection {
     const name = doc.name;
     const description = doc.description;
     const picture = doc.picture;
+    const link = doc.link;
     const tags = doc.tags;
-    return { name, description, picture, tags };
+    return { name, description, picture, tags, link };
   }
 }
 

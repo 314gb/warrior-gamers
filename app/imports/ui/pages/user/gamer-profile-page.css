@@ -1,16 +1,35 @@
 #view_profile{
-    background-color: #AAF8AC;
+  background: linear-gradient(to bottom right, white, darkgreen,darkgreen) !important;;
     border: 1px solid green
 }
 #view_profile p{
-    color: darkgreen;
+    color: black;
 }
 #view_profile .column{
-    color: darkgreen;
+    color: whitesmoke;
 }
 #gameDiv p{
-    color: darkgreen;
+    color: black;
 }
 #gameDiv div {
-    color: darkgreen;
+    color: whitesmoke;
 }
+.ui.menu .active.item {
+    background: darkgreen;
+    color: rgba(0, 0, 0, 0.95);
+    font-weight: normal;
+    box-shadow: none;
+}
+.ui.menu .item {
+    background: darkgreen;
+}
+.ui.menu a.item:hover {
+    background: grey;
+    color: grey;
+}
+.ui.menu a.active.item:hover {
+    background: grey;
+    color: grey;
+}
+/*
+*/

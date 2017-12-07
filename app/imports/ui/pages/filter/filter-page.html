@@ -1,23 +1,30 @@
 <template name="Filter_Page">
   {{#if Template.subscriptionsReady}}
     <div style="margin-top: 20px" class="ui container">
+      <div>
+        <form class="ui equal width form filter-data-form">
+          <h1 style="text-align: center; text-shadow: 2px 2px black; color:white">SEARCH FOR PEOPLE & EVENTS!</h1>
+          <hr COLOR="green">
+          <div class="fields">
+            {{> Select_Form_Control label="Games" options=gameList multiple=true }}
+            <button style="margin-top: 28px; height: 39.88px; background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
+              <div style="font-size: 20px; padding-left: 5px; color: green;" class="visible content"><i class="search icon"></i></div>
+              <div style="font-size: 25px; padding-top: 5px;" class="hidden content">
+                <i class="users icon"></i>
+              </div>
+            </button>
+          </div>
+        </form>
+        <h1 style="color:white; text-shadow: 2px 2px black;"> PEOPLE:</h1>
+        {{> Filter_Page_Directory profiles=profiles }}
 
-      <form class="ui equal width form filter-data-form">
-        <div class="field">
-          {{> Select_Form_Control label="Games" options=games multiple=true }}
+        <h1 style="color:white; text-shadow: 2px 2px black;"> EVENTS:</h1>
+        <div class="ui cards">
+          {{#each event in events }}
+            {{> Event_List event=event }}
+          {{/each}}
         </div>
-        <div style="text-align: center" class="wrapper">
-          <button style="background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
-            <div style="font-size: 20px; padding-left: 5px; color: green;" class="visible content">FIND MY BUDDY!</div>
-            <div style="font-size: 25px; padding-top: 5px;" class="hidden content">
-              <i class="users icon"></i>
-            </div>
-          </button>
-        </div>
-      </form>
-
-      {{> Filter_Page_Directory profiles=profiles }}
-
+      </div>
     </div>
   {{/if}}
 </template>

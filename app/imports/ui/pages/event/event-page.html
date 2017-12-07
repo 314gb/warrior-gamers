@@ -1,10 +1,10 @@
 <template name="Event_Page">
   {{#if Template.subscriptionsReady}}
-    <div class="ui centered header" style="font-size: 30px">
-      Events happening in campus
-    </div>
-    <div class="ui container">
-      <div class="ui divided items">
+    <h1 style="text-align: center; color:white; text-shadow: 2px 2px black;">ALL EVENTS ON CAMPUS</h1>
+    <div style="width: 84%; margin-top: 20px" class="ui container">
+      <hr COLOR="green">
+      <h1 style = "color:white; text-shadow: 2px 2px black;"> EVENTS:</h1>
+      <div class="ui cards" style="width: 100%;">
         {{#each event in events }}
           {{> Event_List event=event }}
         {{/each}}

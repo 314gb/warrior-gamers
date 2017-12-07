@@ -1,65 +1,67 @@
 .user-layout-body {
   border-bottom: none;
   padding-top: 75px;
-  background-color: ghostwhite !important;
+  background: linear-gradient(black, darkgreen, white) !important;
 }
 
 #menuBar{
-  border: 1px solid green;
-  background-color: #AAF8AC;
+  border: 3px solid black;
+  background: linear-gradient(to bottom right, darkgreen, black, black);
 }
 
 #menuItem {
-  color: green;
+  color: white;
   font-size: 20px;
 }
 
 #menuItem.active.item {
-  color: black !important;
+  color: green !important;
 }
 
 #menuTitle {
-  color: green;
+  color: whitesmoke;
   font-size: 30px;
 }
 
 #menuTitle.active.item {
-  color: black !important;
+  color: white !important;
 }
 
 .menu.transition.visible {
-  font-color: green !important;
-  background-color: #AAF8AC !important;
-  border-color: green !important;
+  font-color: whitesmoke !important;
+  background: linear-gradient(to bottom right, darkgreen, black, black) !important;
+  border-color: black !important;
 }
 
 .item{
-  color: green !important;
-  border-color: green !important;
+  color: white !important;
+  border-color: white !important;
 }
 
 .ui.dropdown.selection.multiple {
-  background-color: #AAF8AC !important;
-  border-color: green !important;
-  color: green !important;
+  background: linear-gradient(to bottom right, darkgreen, black) !important;
+  border-color: black !important;
+  color: darkgreen !important;
 }
 
 .default.text {
-  color: green !important;
+  color: whitesmoke !important;
 }
 
 .ui.label.transition.visible {
-  background-color: #AAF8AC !important;
-  border: 1px solid green;
-  color: green !important;
+  background: linear-gradient(to bottom right, darkgreen, black, black) !important; !important;
+  border: 1px solid white;
+  color: whitesmoke !important;
 }
 
 input#First::placeholder, input#Last::placeholder, input#Title::placeholder, input#Picture::placeholder, input#Steam::placeholder, input#Blizzard::placeholder, input#LoL::placeholder, input#Date::placeholder, input#Name::placeholder, input#Location::placeholder, input#Event::placeholder {
   color: darkgreen;
 }
+
 textarea#Bio::placeholder {
-  color: darkgreen;
+  color: whitesmoke;
 }
+
 .ui.simple.dropdown.item:hover {
-  border-bottom: none;
+  border-bottom: whitesmoke;
 }
