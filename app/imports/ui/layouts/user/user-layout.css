@@ -39,12 +39,9 @@
 }
 
 .ui.dropdown.selection.multiple {
-
   background: linear-gradient(to bottom right, darkgreen, black) !important;
   border-color: black !important;
   color: darkgreen !important;
-  width: 100% !important;:
-
 }
 
 .default.text {
@@ -63,10 +60,6 @@ input#First::placeholder, input#Last::placeholder, input#Title::placeholder, inp
 
 textarea#Bio::placeholder {
   color: whitesmoke;
-}
-
-textarea#Description::placeholder {
-  color: darkgreen;
 }
 
 .ui.simple.dropdown.item:hover {

@@ -1,12 +1,15 @@
 <template name="Game_List">
-  <div class="card" style="border: 5px outset green; background-color: #AAF8AC;">
-    <div class="image" >
-      <img class="Medium ui image" style="height:400px" src="{{game.picture}}">
-    </div>
-
+  <div class="card" style="border-radius: 0; max-width: 300px; border: 5px outset green; background-color: #AAF8AC;">
     <div class="content">
-      <a class="header">
-      {{game.name}}
+      <div class="image" >
+        <a href="{{game.link}}">
+          <img class="medium ui image" style="width: 100%; height:300px" src="{{game.picture}}">
+        </a>
+      </div>
+
+      <a href="{{game.link}}" class="left aligned header" style="padding-top: 15px; color: darkgreen; font-color: green">
+        {{game.name}}
+        <hr COLOR="green">
       </a>
 
       <div class="description">
@@ -14,9 +17,9 @@
       </div>
 
 
-    <div style="margin-top: 10px">
+    <div style="margin-top: 15px">
       {{#each Tags in game.tags}}
-      <a style="margin-bottom: 2px;" class="ui green label">{{Tags}}</a>
+      <a href="http://www.google.com/search?q={{Tags}}" style="margin-bottom: 5px;" class="ui green label">{{Tags}}</a>
       {{/each}}
     </div>
     </div>
@@ -28,5 +31,4 @@
       </a>
     </div>
   </div>
-
 </template>

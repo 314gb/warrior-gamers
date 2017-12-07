@@ -46,10 +46,11 @@ Template.Add_Game_Page.events({
     const name = event.target.Name.value;
     const picture = event.target.Picture.value;
     const description = event.target.Description.value;
+    const link = event.target.Link.value;
     const selectedTags = _.filter(event.target.Tags.selectedOptions, (option) => option.selected);
     const tags = _.map(selectedTags, (option) => option.value);
 
-    const gameData = { name, picture, description, tags };
+    const gameData = { name, picture, description, link, tags };
 
     // Clear out any old validation errors.
     instance.context.reset();

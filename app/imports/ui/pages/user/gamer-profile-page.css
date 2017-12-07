@@ -14,3 +14,22 @@
 #gameDiv div {
     color: whitesmoke;
 }
+.ui.menu .active.item {
+    background: darkgreen;
+    color: rgba(0, 0, 0, 0.95);
+    font-weight: normal;
+    box-shadow: none;
+}
+.ui.menu .item {
+    background: darkgreen;
+}
+.ui.menu a.item:hover {
+    background: grey;
+    color: grey;
+}
+.ui.menu a.active.item:hover {
+    background: grey;
+    color: grey;
+}
+/*
+*/
