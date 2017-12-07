@@ -3,7 +3,7 @@
     <div style="width: 84%; margin-top: 20px" class="ui container">
       <div>
         <form class="ui equal width form filter-tag-form">
-          <h1 style="text-align: center">SEARCH FOR GAMES!</h1>
+          <h1 style="text-align: center; color:white; text-shadow: 2px 2px black;" >SEARCH FOR GAMES!</h1>
           <hr COLOR="green">
           <div class="fields">
             {{> Select_Form_Control label="Tags" options=tagList multiple=true }}
@@ -16,7 +16,7 @@
           </div>
         </form>
 
-        <h1> GAMES:</h1>
+        <h1 style="text-align: center; color:white; text-shadow: 2px 2px black;"> GAMES:</h1>
         <div class="ui cards">
           {{#each game in games }}
             {{> Game_List game=game }}
