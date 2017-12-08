@@ -75,7 +75,7 @@ Template.Gamer_Profile_Page.events({
     const lastName = event.target.Last.value;
     // const title = event.target.Title.value;
     const username = FlowRouter.getParam('username'); // schema requires username.
-    const picture = event.target.Picture.value;
+    let picture = event.target.Picture.value;
     const steam = event.target.Steam.value;
     const blizzard = event.target.Blizzard.value;
     const league = event.target.LoL.value;
