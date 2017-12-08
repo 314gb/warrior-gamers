@@ -1,95 +1,99 @@
 <template name="Gamer_Profile_Page">
 
   {{#if Template.subscriptionsReady}}
-  <div class = "ui text container segment">
-    <div class="ui top menu" style="background: linear-gradient(to bottom left, white, darkgreen, darkgreen) !important;">
-      <a class="active item" data-tab = "view_profile" id="tabText" >View Your Profile</a>
-      <a class="item" data-tab = "change_profile" id="tabText">Change Your Profile</a>
-      <script>
-      $('.top.menu .item').tab();
-      </script>
-    </div>
-
-
-    <div class="ui tab segment" style=" background: linear-gradient(to bottom right, darkgreen, black); border: 1px solid green;" data-tab="change_profile">
-    <div style="border-color: green; color: whitesmoke" class="ui dividing header">
-      Change your profile
-    </div>
-    <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
-
-      <div class="fields">
-        {{> Text_Form_Control label="First" placeholder="First" value=profile.firstName errorMessage=(fieldError "firstName")}}
-        {{> Text_Form_Control label="Last" placeholder="Last" value=profile.lastName errorMessage=(fieldError "lastName")}}
+    <div class="ui text container segment">
+      <div class="ui top menu"
+           style="background: linear-gradient(to bottom left, white, darkgreen, darkgreen) !important;">
+        <a class="active item" data-tab="view_profile" id="tabText">View Your Profile</a>
+        <a class="item" data-tab="change_profile" id="tabText">Change Your Profile</a>
+        <script>
+          $('.top.menu .item').tab();
+        </script>
       </div>
 
-      <div class="field">
-        {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage="picture"}}
-      </div>
 
-      <div class="field">
-        {{> Select_Form_Control label="Games" options=games errorMessage="games" multiple=true }}
-      </div>
-
-      <div class="fields">
-
-        {{> Social_Network_Form_Control label="Steam" icon="steam" placeholder="Steam Name" value=profile.steam errorMessage=(fieldError "steam")}}
-
-        {{> Social_Network_Form_Control label="Blizzard" icon="game" placeholder="Battle Tag" value=profile.blizzard errorMessage=(fieldError "blizzard")}}
-
-        {{> Social_Network_Form_Control label="LoL" icon="game" placeholder="Summoner Name" value=profile.league errorMessage=(fieldError "league")}}
-
-      </div>
-
-      {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Write about yourself here!" errorMessage=(fieldError "bio")}}
-
-      <button style=" background: linear-gradient(to bottom right, darkgreen, black); border: 1px solid green" class="ui animated button" type="submit">
-        <div style="font-size: 20px; padding-left: 10px; color: whitesmoke;" class="visible content">Submit!</div>
-        <div style="font-size: 25px; padding-left: 5px; padding-top: 5px; color: whitesmoke" class="hidden content">
-          <i class="white user icon"></i>
+      <div class="ui tab segment"
+           style=" background: linear-gradient(to bottom right, darkgreen, black); border: 1px solid green;"
+           data-tab="change_profile">
+        <div style="border-color: green; color: whitesmoke" class="ui dividing header">
+          Change your profile
         </div>
-      </button>
-      {{#if displaySuccessMessage}}
-      <div class="ui success message">
-        <p>Profile data successfully updated.</p>
+        <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
+
+          <div class="fields">
+            {{> Text_Form_Control label="First" placeholder="First" value=profile.firstName errorMessage=(fieldError "firstName")}}
+            {{> Text_Form_Control label="Last" placeholder="Last" value=profile.lastName errorMessage=(fieldError "lastName")}}
+          </div>
+
+          <div class="field">
+            {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage="picture"}}
+          </div>
+
+          <div class="field">
+            {{> Select_Form_Control label="Games" options=games errorMessage="games" multiple=true }}
+          </div>
+
+          <div class="fields">
+
+            {{> Social_Network_Form_Control label="Steam" icon="steam" placeholder="Steam Name" value=profile.steam errorMessage=(fieldError "steam")}}
+
+            {{> Social_Network_Form_Control label="Blizzard" icon="game" placeholder="Battle Tag" value=profile.blizzard errorMessage=(fieldError "blizzard")}}
+
+            {{> Social_Network_Form_Control label="LoL" icon="game" placeholder="Summoner Name" value=profile.league errorMessage=(fieldError "league")}}
+
+          </div>
+
+          {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Write about yourself here!" errorMessage=(fieldError "bio")}}
+
+          <button style=" background: linear-gradient(to bottom right, darkgreen, black); border: 1px solid green"
+                  class="ui animated button" type="submit">
+            <div style="font-size: 20px; padding-left: 10px; color: whitesmoke;" class="visible content">Submit!</div>
+            <div style="font-size: 25px; padding-left: 5px; padding-top: 5px; color: whitesmoke" class="hidden content">
+              <i class="white user icon"></i>
+            </div>
+          </button>
+          {{#if displaySuccessMessage}}
+            <div class="ui success message">
+              <p>Profile data successfully updated.</p>
+            </div>
+          {{/if}}
+        </form>
       </div>
-      {{/if}}
-    </form>
-  </div>
-  <div class="active ui tab segment " data-tab = "view_profile" id = "view_profile">
+      <div class="active ui tab segment " data-tab="view_profile" id="view_profile">
 
-     <div class = "ui dividing header">
-     <p>Player: {{profile.firstName}} {{profile.lastName}}</p>
-     <hr>
-     <p>Bio:
-     <br>
-     {{profile.bio}}
-     </p>
-     </div>
-     <div id = "gamesDiv">
-        <p>Your games:
+        <div class="ui dividing header">
+          <p style="color: whitesmoke; font-color: whitesmoke;">Player: {{profile.firstName}} {{profile.lastName}}</p>
+          <hr>
+          <p style="color: whitesmoke; font-color: whitesmoke;">Bio:
+            <br>
+            {{profile.bio}}
+          </p>
+        </div>
+        <div style="color: white">
+          <h3 style="margin-top: 2px; color: whitesmoke">Your games:
             {{#each gamesReturned}}
-                <div class="ui green label">{{this}}</div>
+              <div class="ui green label" style="background: linear-gradient(to bottom right, green, green, black);">{{this}}</div>
             {{/each}}
-        </p>
-        <hr>
-    </div>
-     <div class = "ui three column divided grid">
-         <div class = "row">
-             <div class = "column">
-                 This is your Steam Name <a href={{steamNamerGive}}>{{profile.steam}}</a>
-         </div>
-             <div class = "column">
-                 This is your league Summoner Stats: <a href = {{opGG}}> {{profile.league}} </a>
-         </div>
-         <div class = "column">
-             This is your Battle Tag {{profile.blizzard}}
-     </div>
-    </div>
-    </div>
+          </h3>
+          <hr>
+        </div>
+        <div class="ui three column divided grid">
+          <div class="row">
+            <div class="column">
+              Steam profile : <a href={{steamNamerGive}}>{{profile.steam}}</a>
+            </div>
+            <div class="column">
+              Summoner profile [LoL] : <a href={{opGG}}> {{profile.league}} </a>
+            </div>
+            <div class="column">
+              Battle Tag : {{profile.blizzard}}
+            </div>
+          </div>
+        </div>
 
-  </div>
+      </div>
 
-</div>
+    </div>
   {{/if}}
 </template>
 
