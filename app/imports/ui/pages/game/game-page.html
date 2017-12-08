@@ -1,26 +1,29 @@
 <template name="Game_Page">
   {{#if Template.subscriptionsReady}}
-    <div style="width: 84%; margin-top: 20px" class="ui container">
-      <div>
-        <form class="ui equal width form filter-tag-form">
-          <h1 style="text-align: center; color:white; text-shadow: 2px 2px black;" >SEARCH FOR GAMES!</h1>
-          <hr COLOR="green">
-          <div class="fields">
-            {{> Select_Form_Control label="Tags" options=tagList multiple=true }}
-            <button style="margin-top: 28px; height: 39.88px; background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
-              <div style="font-size: 20px; padding-left: 5px; color: green;" class="visible content"><i class="search icon"></i></div>
-              <div style="font-size: 25px; padding-top: 5px;" class="hidden content">
-                <i class="users icon"></i>
-              </div>
-            </button>
+    <div style="background: linear-gradient(black, darkgreen, white) !important;">
+      <div style="width: 84%; padding-top: 20px" class="ui container">
+        <div>
+          <form class="ui equal width form filter-tag-form">
+            <h1 style="text-align: center; color:white; text-shadow: 2px 2px black;">SEARCH FOR GAMES!</h1>
+            <hr COLOR="white">
+            <div style="padding-top: 10px;" class="fields">
+              {{> Select_Form_Control label="Tags" options=tagList multiple=true }}
+              <button
+                  style="margin-top: 33px; height: 39.88px; background: linear-gradient(to bottom right, green, black);"
+                  class="ui animated button" type="submit">
+                <div style="font-size: 20px; padding-left: 5px; color: white;" class="visible content"><i
+                    class="search icon"></i></div>
+                <div style="font-size: 25px; padding-top: 5px; color: white;" class="hidden content">
+                  <i class="game icon"></i>
+                </div>
+              </button>
+            </div>
+          </form>
+          <div style="padding-top: 10px;" class="ui cards">
+            {{#each game in games }}
+              {{> Game_List game=game }}
+            {{/each}}
           </div>
-        </form>
-
-        <h1 style="text-align: center; color:white; text-shadow: 2px 2px black;"> GAMES:</h1>
-        <div class="ui cards">
-          {{#each game in games }}
-            {{> Game_List game=game }}
-          {{/each}}
         </div>
       </div>
     </div>

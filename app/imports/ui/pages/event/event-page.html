@@ -1,8 +1,9 @@
 <template name="Event_Page">
   {{#if Template.subscriptionsReady}}
-    <h1 style="text-align: center; color:white; text-shadow: 2px 2px black;">ALL EVENTS ON CAMPUS</h1>
-    <div style="width: 84%; margin-top: 20px" class="ui container">
-      <hr COLOR="green">
+  <div style="background: linear-gradient(black, darkgreen, white) !important;">
+    <h1 style="padding-top: 20px; text-align: center; color:white; text-shadow: 2px 2px black;">ALL EVENTS ON CAMPUS</h1>
+    <div style="width: 84%;" class="ui container">
+      <hr COLOR="white">
       <h1 style = "color:white; text-shadow: 2px 2px black;"> EVENTS:</h1>
       <div class="ui cards" style="width: 100%;">
         {{#each event in events }}
@@ -10,5 +11,6 @@
         {{/each}}
       </div>
     </div>
+  </div>
   {{/if}}
 </template>

@@ -1,7 +1,6 @@
 .user-layout-body {
   border-bottom: none;
   padding-top: 75px;
-  background: linear-gradient(black, darkgreen, white) !important;
 }
 
 #menuBar{
@@ -40,8 +39,8 @@
 
 .ui.dropdown.selection.multiple {
   background: linear-gradient(to bottom right, darkgreen, black) !important;
-  border-color: black !important;
-  color: darkgreen !important;
+  border-color: white !important;
+  color: white !important;
 }
 
 .default.text {
@@ -54,14 +53,12 @@
   color: whitesmoke !important;
 }
 
-input#First::placeholder, input#Last::placeholder, input#Title::placeholder, input#Picture::placeholder, input#Steam::placeholder, input#Blizzard::placeholder, input#LoL::placeholder, input#Date::placeholder, input#Name::placeholder, input#Location::placeholder, input#Event::placeholder {
-  color: darkgreen;
+input#First::placeholder, input#Last::placeholder, input#Title::placeholder, input#Picture::placeholder, input#Steam::placeholder, input#Blizzard::placeholder, input#LoL::placeholder, input#Date::placeholder, input#Name::placeholder, input#Location::placeholder, input#Event::placeholder, input#Time::placeholder, input#Phone::placeholder, input#Link::placeholder {
+  color: white;
 }
 
-textarea#Bio::placeholder {
-  color: whitesmoke;
+textarea#Bio::placeholder, textarea#Description::placeholder {
+  color: white;
 }
 
-.ui.simple.dropdown.item:hover {
-  border-bottom: whitesmoke;
-}
+
