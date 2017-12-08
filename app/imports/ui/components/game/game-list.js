@@ -12,9 +12,6 @@ Template.Game_List.onCreated(function onCreated() {
     this.messageFlags = new ReactiveDict();
 });
 
-
-
-
 Template.Game_List.helpers({
   tagged( gamename ) {
       let onlygames = _.pluck( GamerProfiles.findAll(), 'games');

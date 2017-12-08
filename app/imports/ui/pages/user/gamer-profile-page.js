@@ -7,7 +7,6 @@ import { Games } from '/imports/api/interest/GameCollection';
 import { HTTP } from 'meteor/http';
 import { Meteor } from 'meteor/meteor'
 
-
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
