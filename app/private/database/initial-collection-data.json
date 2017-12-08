@@ -152,7 +152,7 @@
         {
           "name": "League of Legends",
           "picture": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg",
-          "description": "League of Legends is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions,each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
+          "description": "League of Legends is a multiplayer online battle arena video game. League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions,each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
           "link": "https://na.leagueoflegends.com/",
           "tags": [
             "MOBA",
@@ -161,7 +161,7 @@
         },
         {
           "name": "Maplestory",
-          "picture": "http://nxcache.nexon.net/all/v1.5.2/img/gnt/games-dropdown/maplestory.jpg",
+          "picture": "http://nxcache.nexon.net/maplestory/assets-new/img/default/microsites.jpg",
           "description": "MapleStory is a free-to-play, 2D, side-scrolling massively multiplayer online role-playing game.In the game, players travel the Maple World, defeating monsters and developing their characters' skills and abilities as is typical in role-playing games. Players can interact with others in many ways, including chatting and trading..",
           "link": "http://maplestory.nexon.net/",
           "tags": [
@@ -181,7 +181,7 @@
         },
         {
           "name": "Runescape",
-          "picture": "http://www.runescape.com/img/microsite/social-share.jpg",
+          "picture": "http://vignette2.wikia.nocookie.net/runescape2/images/d/d2/RuneScape_3_The_Soundtrack.png/revision/latest?cb=20131105075147",
           "description": "Set in the medieval fantasy world of Gielinor, RuneScape is a free browser MMO game where millions of players from around the globe become heroes with the freedom to explore and experience a realm full of magic, mystery and adventure.",
           "link": "http://www.runescape.com/splash",
           "tags": [
@@ -202,7 +202,7 @@
         },
         {
           "name": "Overwatch",
-          "picture": "https://en.wikipedia.org/wiki/Overwatch_(video_game)#/media/File:Overwatch_cover_art_(PC).jpg",
+          "picture": "https://upload.wikimedia.org/wikipedia/en/8/8f/Overwatch_cover_art_%28PC%29.jpg",
           "description": "Overwatch is a team-based multiplayer online first-person shooter video game. Overwatch assigns players into two teams of six, with each player selecting from a roster of over 20 characters, known in-game as heroes, each with a unique style of play, whose roles are divided into four general categories: Offense, Defense, Tank, and Support.",
           "link": "https://playoverwatch.com/",
           "tags": [
@@ -285,7 +285,7 @@
         },
         {
           "name": "Grand Chase",
-          "picture": "http://static1.wikia.nocookie.net/__cb20111127011205/grandchase/images/7/7d/GrandChaseOriginalWallpaperFinal.jpg",
+          "picture": "https://img00.deviantart.net/c19d/i/2013/340/b/c/grand_chase_season_v_wallpaper_re_color__by_re_colorsgc-d6wzd56.png",
           "description": "Grand Chase was a free-to-play, two-dimensional side-scrolling MMORPG. Due to the combos and special attacks, the game had a feel that is similar to side-scrolling fighting games such as Double Dragon, while the appearance and design of the backdrops, as well as the characters and monster, puts the game in an anime-esque setting. While it is an action game, the designers took care to not make a button masher.",
           "link": "https://grandchasereborn.com/",
           "tags": [
@@ -305,7 +305,7 @@
         },
         {
           "name": "Gunbound",
-          "picture": "",
+          "picture": "http://img.softnyx.net/1/gb/Download/screenshot_02_b.jpg",
           "description": "GunBound is a free-to-play, turn-based, room-to-room, multiplayer online game with many similar features to the popular Worms game series.  In GunBound, players are assigned to two opposing teams which take turns firing at each other with vehicles called Mobiles in GunBound parlance. Each Mobile has three unique weapons, labeled 1, 2, and SS (Special Shot).",
           "link": "http://gunbound.softnyx.net/",
           "tags": [
@@ -318,7 +318,8 @@
     {
       "name": "GamerProfileCollection",
       "contents": [
-        {"firstName": "Yizan",
+        {
+          "firstName": "Yizan",
           "lastName": "Chen",
           "username": "yizan",
           "picture": "",
@@ -329,8 +330,6 @@
           "steam": "",
           "blizzard": "",
           "league": ""
-        }
-      ]
         },
         {
           "firstName": "Tevin",
