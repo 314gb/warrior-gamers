@@ -1,16 +1,16 @@
 <template name="Cas_Login">
   <div class="ui primary {{size}}">
       {{#if currentUser}}
-        <button style="background-color: lightgreen; border: 5px outset green;" class="ui animated button cas-logout">
-          <div style="font-size: 16px; color: green;" class="visible content">Logout</div>
-          <div style="font-size: 25px; padding-top: 5px;" class="hidden content">
+        <button style="background: linear-gradient(to bottom right, black, darkgreen, white) !important; border: 5px outset darkgreen; border-radius: 0px;" class="ui animated button cas-logout">
+          <div style="font-size: 16px; color: white;" class="visible content">Logout</div>
+          <div style="font-size: 25px; color: white; padding-top: 5px;" class="hidden content">
             <i class="hand peace icon"></i>
           </div>
         </button>
       {{else}}
-        <button style="background-color: lightgreen; border: 5px outset green;" class="ui animated button cas-login">
-          <div style="font-size: 16px; color: green;" class="visible content">Login</div>
-          <div style="font-size: 25px; padding-top: 5px;" class="hidden content">
+        <button style="background: linear-gradient(to bottom right, black, darkgreen, white) !important; border: 5px outset green;" class="ui animated button cas-login">
+          <div style="font-size: 16px; color: white;" class="visible content">Login</div>
+          <div style="font-size: 25px; color: white; padding-top: 5px;" class="hidden content">
             <i class="hand spock icon"></i>
           </div>
         </button>

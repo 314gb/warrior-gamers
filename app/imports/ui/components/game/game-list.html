@@ -1,5 +1,5 @@
 <template name="Game_List">
-  <div class="card" style="border-radius: 0; max-width: 300px; border: 5px outset green; background-color: #AAF8AC;">
+  <div class="card" style="color: white; border-radius: 0; max-width: 300px; border: 5px outset darkgreen; background: linear-gradient(to top left, black, green, green);">
     <div class="content">
       <div class="image" >
         <a href="{{game.link}}">
@@ -7,19 +7,19 @@
         </a>
       </div>
 
-      <a href="{{game.link}}" class="left aligned header" style="padding-top: 15px; color: darkgreen; font-color: green">
+      <a href="{{game.link}}" class="left aligned header" style="padding-top: 15px; color: darkgreen; color: white">
         {{game.name}}
-        <hr COLOR="green">
+        <hr COLOR="white">
       </a>
 
-      <div class="description">
+      <div style="color: white;" class="description">
         {{game.description}}
       </div>
 
 
     <div style="margin-top: 15px">
       {{#each Tags in game.tags}}
-      <a href="http://www.google.com/search?q={{Tags}}" style="margin-bottom: 5px;" class="ui green label">{{Tags}}</a>
+      <a href="http://www.google.com/search?q={{Tags}}" style="margin-bottom: 5px; background: linear-gradient(to bottom right, darkgreen, darkgreen, black);" class="ui green label">{{Tags}}</a>
       {{/each}}
     </div>
     </div>

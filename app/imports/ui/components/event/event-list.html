@@ -1,17 +1,16 @@
 <template name="Event_List">
-  <div class="card" style="max-width: 300px; border: 5px outset green; border-radius: 0; background-color: #AAF8AC;">
-
+  <div class="card" style="color: white; border-radius: 0; max-width: 300px; border: 5px outset darkgreen; background: linear-gradient(to top left, black, green, green);">
     <div class="content" style="margin-right: 15px; padding: 10px 0 10px 20px;">
       <div class="image" >
         <img class="medium ui image" style="width: 100%; height: 250px" src="{{event.picture}}">
       </div>
 
-      <a class="left aligned header" style="padding-top: 15px; color: darkgreen; font-color: green">
+      <a class="left aligned header" style="padding-top: 15px; color: darkgreen; color: white">
         {{event.name}}
-        <hr COLOR="green">
+        <hr COLOR="white">
       </a>
 
-      <div class="meta">
+      <div style="color: white" class="meta">
         <span class="cinema">
           Location: {{event.location}}
           <br>
@@ -21,10 +20,10 @@
           <br>
           Phone Number: {{event.phone}}
         </span>
-        <hr COLOR="green">
+        <hr COLOR="white">
       </div>
 
-      <div class="description" style="margin-right: 15px;">
+      <div class="description" style="color: white; margin-right: 15px;">
         <span class="cinema">
           Description: <br> {{event.description}}
         </span>
@@ -32,7 +31,7 @@
 
       <div class="extra content" style="padding-top: 10px;">
         {{#each games in event.games}}
-          <a href="http://www.google.com/search?q={{games}}" style="margin-bottom: 5px;" class="ui green label">{{games}}</a>
+          <a href="http://www.google.com/search?q={{games}}" style="margin-bottom: 5px; background: linear-gradient(to bottom right, darkgreen, darkgreen, black);" class="ui green label">{{games}}</a>
         {{/each}}
       </div>
     </div>

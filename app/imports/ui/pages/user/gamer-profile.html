@@ -1,9 +1,10 @@
 <template name="Gamer_Profile_Page">
 
   {{#if Template.subscriptionsReady}}
-    <div class="ui text container segment">
+    <div style="padding-top: 20px; background: linear-gradient(black, darkgreen, white) !important; !important; min-height: 615px;">
+    <div class="ui text container segment" style="background: linear-gradient(to bottom left, black, darkgreen) !important;">
       <div class="ui top menu"
-           style="background: linear-gradient(to bottom left, white, darkgreen, darkgreen) !important;">
+           style="background: linear-gradient(to bottom right, black, darkgreen, darkgreen, black) !important;">
         <a class="active item" data-tab="view_profile" id="tabText">View Your Profile</a>
         <a class="item" data-tab="change_profile" id="tabText">Change Your Profile</a>
         <script>
@@ -13,13 +14,13 @@
 
 
       <div class="ui tab segment"
-           style=" background: linear-gradient(to bottom right, darkgreen, black); border: 1px solid green;"
+           style="background: linear-gradient(to bottom right, black, darkgreen) !important; border: none;"
            data-tab="change_profile">
-        <div style="border-color: green; color: whitesmoke" class="ui dividing header">
+        <div style="border-color: white; color: whitesmoke" class="ui header">
           Change your profile
+          <hr COLOR="white">
         </div>
         <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
-
           <div class="fields">
             {{> Text_Form_Control label="First" placeholder="First" value=profile.firstName errorMessage=(fieldError "firstName")}}
             {{> Text_Form_Control label="Last" placeholder="Last" value=profile.lastName errorMessage=(fieldError "lastName")}}
@@ -35,17 +36,17 @@
 
           <div class="fields">
 
-            {{> Social_Network_Form_Control label="Steam" icon="steam" placeholder="Steam Name" value=profile.steam errorMessage=(fieldError "steam")}}
+            {{> Social_Network_Form_Control label="Steam" icon="https://img00.deviantart.net/7fab/i/2013/205/9/f/steam_icon_3_by_kryuko-d6eyp1b.png" placeholder="Steam Name" value=profile.steam errorMessage=(fieldError "steam")}}
 
-            {{> Social_Network_Form_Control label="Blizzard" icon="game" placeholder="Battle Tag" value=profile.blizzard errorMessage=(fieldError "blizzard")}}
+            {{> Social_Network_Form_Control label="Blizzard" icon="https://vignette.wikia.nocookie.net/wowwiki/images/c/cf/Blizzard_app-OSX_1024x1024_icon.png/revision/latest?cb=20170324041037" placeholder="Battle Tag" value=profile.blizzard errorMessage=(fieldError "blizzard")}}
 
-            {{> Social_Network_Form_Control label="LoL" icon="game" placeholder="Summoner Name" value=profile.league errorMessage=(fieldError "league")}}
+            {{> Social_Network_Form_Control label="LoL" icon="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/12/League_of_Legends_Icon.png/revision/latest?cb=20150402234343" placeholder="Summoner Name" value=profile.league errorMessage=(fieldError "league")}}
 
           </div>
 
           {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Write about yourself here!" errorMessage=(fieldError "bio")}}
 
-          <button style=" background: linear-gradient(to bottom right, darkgreen, black); border: 1px solid green"
+          <button style="background: linear-gradient(to bottom right, green, black);"
                   class="ui animated button" type="submit">
             <div style="font-size: 20px; padding-left: 10px; color: whitesmoke;" class="visible content">Submit!</div>
             <div style="font-size: 25px; padding-left: 5px; padding-top: 5px; color: whitesmoke" class="hidden content">
@@ -59,26 +60,25 @@
           {{/if}}
         </form>
       </div>
-      <div class="active ui tab segment " data-tab="view_profile" id="view_profile">
-
-        <div class="ui dividing header">
-          <p style="color: whitesmoke; font-color: whitesmoke;">Player: {{profile.firstName}} {{profile.lastName}}</p>
-          <hr>
+      <div class="active ui tab segment" style="border: none;" data-tab="view_profile" id="view_profile">
+        <div class="ui header">
+          <p style="margin-bottom: -5px; color: whitesmoke; font-color: whitesmoke;">Player: {{profile.firstName}} {{profile.lastName}}</p>
+          <hr COLOR="white">
           <p style="color: whitesmoke; font-color: whitesmoke;">Bio:
             <br>
             {{profile.bio}}
           </p>
         </div>
         <div style="color: white">
-          <h3 style="margin-top: 2px; color: whitesmoke">Your games:
+          <h3 style="margin-top: 3px; color: whitesmoke">Your games:
             {{#each gamesReturned}}
-              <div class="ui green label" style="background: linear-gradient(to bottom right, green, green, black);">{{this}}</div>
+              <div class="ui green label" style="margin-bottom: 8px; background: linear-gradient(to bottom right, green, green, black);">{{this}}</div>
             {{/each}}
           </h3>
           <hr>
         </div>
         <div class="ui three column divided grid">
-          <div class="row">
+          <div class="row" style="border-top: none !important;">
             <div class="column">
               Steam profile : <a href={{steamNamerGive}}>{{profile.steam}}</a>
             </div>
@@ -90,9 +90,8 @@
             </div>
           </div>
         </div>
-
       </div>
-
+    </div>
     </div>
   {{/if}}
 </template>

@@ -20,12 +20,12 @@
     <label style="color: whitesmoke;">{{label}}</label>
     <div class="field">
       <div class="ui left icon input">
-        <input style="color: green; background-color: #AAF8AC; border: 1px solid green" type="input"
+        <input style="background: linear-gradient(to bottom right, white, darkgreen, black) !important; border: 1px solid white; color: white;" type="input"
                name="{{#if name}}{{name}}{{else}}{{label}}{{/if}}"
                id="{{#if id}}{{id}}{{else}}{{label}}{{/if}}"
                placeholder="{{#if placeholder}}{{placeholder}}{{else}}{{label}}{{/if}}"
                value="{{value}}">
-        <i class="{{icon}} icon"></i>
+        <i class="icon"><img style="display: block; margin: auto; margin-top: 5px; width: 75%; height: 75%;" class="mini ui image" src="{{icon}}"></i>
       </div>
     </div>
     {{> Form_Error_Message errorMessage=errorMessage}}

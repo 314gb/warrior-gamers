@@ -1,9 +1,11 @@
 <template name="Add_Game_Page">
 
   {{#if Template.subscriptionsReady}}
-    <div class="ui text container segment" style="background-color: #AAF8AC;">
-      <div style="border-color: green; color: darkgreen" class="ui dividing header">
-        Add a game to the database!
+    <div style="padding-top: 20px; background: linear-gradient(black, darkgreen, white) !important;">
+      <div class="ui text container segment" style="background: linear-gradient(to bottom right, black, darkgreen) !important;">
+      <div style="color: white" class="ui centered header">
+        Add a Game!
+        <hr COLOR="white">
       </div>
       <form class="ui equal width form game-data-form {{ successClass }} {{ errorClass }}">
 
@@ -25,10 +27,11 @@
           {{> Select_Form_Control label="Tags" options=tags errorMessage=(fieldError "tags") multiple=true }}
         </div>
 
-        <button style="background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
-          <div style="font-size: 20px; padding-left: 10px; color: green;" class="visible content">Submit!</div>
-          <div style="font-size: 25px; padding-left: 5px; padding-top: 5px;" class="hidden content">
-            <i class="user icon"></i>
+        <button style="background: linear-gradient(to bottom right, green, black);"
+                class="ui animated button" type="submit">
+          <div style="font-size: 20px; padding-left: 10px; color: whitesmoke;" class="visible content">Submit!</div>
+          <div style="font-size: 25px; padding-left: 5px; padding-top: 5px; color: whitesmoke" class="hidden content">
+            <i class="white user icon"></i>
           </div>
         </button>
         {{#if displaySuccessMessage}}
@@ -38,5 +41,6 @@
         {{/if}}
       </form>
     </div>
+  </div>
   {{/if}}
 </template>

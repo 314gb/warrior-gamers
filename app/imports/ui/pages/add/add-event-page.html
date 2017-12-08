@@ -1,10 +1,11 @@
 <template name="Add_Event_Page">
 
   {{#if Template.subscriptionsReady}}
-
-    <div class="ui text container segment" style="background-color: #AAF8AC;">
-      <div style="border-color: green; color: darkgreen" class="ui centered dividing header">
+  <div style="padding-top: 20px; background: linear-gradient(black, darkgreen, white) !important;">
+    <div class="ui text container segment" style="background: linear-gradient(to bottom right, black, darkgreen) !important;">
+      <div style="border-color: white; color: white" class="ui centered header">
         Create an Event!
+        <hr COLOR="white">
       </div>
       <form class="ui equal width form event-data-form {{ successClass }} {{ errorClass }}">
         <div class="field">
@@ -16,10 +17,10 @@
         </div>
 
         <div class="fields">
-          {{> Text_Form_Control label="Date" placeholder="XX/XX/XXXX" value=event.date errorMessage=(fieldError "date")}}
-          {{> Text_Form_Control label="Time" placeholder="XX:XX = XX:XX" value=event.time errorMessage=(fieldError "time")}}
-          {{> Text_Form_Control label="Phone" placeholder="XXX-XXX-XXXX" value=event.phone errorMessage=(fieldError "phone")}}
-          {{> Text_Form_Control label="Location" placeholder="Location" value=event.location errorMessage=(fieldError "location")}}
+          {{> Text_Form_Control label="Date" placeholder="Month / Day / Year" value=event.date errorMessage=(fieldError "date")}}
+          {{> Text_Form_Control label="Time" placeholder="XX:XX - XX:XX" value=event.time errorMessage=(fieldError "time")}}
+          {{> Text_Form_Control label="Phone" placeholder="XXX - XXX - XXXX" value=event.phone errorMessage=(fieldError "phone")}}
+          {{> Text_Form_Control label="Location" placeholder="POST 127" value=event.location errorMessage=(fieldError "location")}}
         </div>
 
         <div class="field">
@@ -28,10 +29,11 @@
 
         {{> TextArea_Form_Control label="Description" value=event.description placeholder="Short Description" errorMessage=(fieldError "description")}}
 
-        <button style="display: block; margin: 0 auto; background-color: #AAF8AC; border: 1px solid green" class="ui animated button" type="submit">
-          <div style="font-size: 20px; padding-left: 10px; color: green;" class="visible content">Submit!</div>
-          <div style="font-size: 25px; padding-left: 5px; padding-top: 5px;" class="hidden content">
-            <i class="user icon"></i>
+        <button style="background: linear-gradient(to bottom right, green, black);"
+                class="ui animated button" type="submit">
+          <div style="font-size: 20px; padding-left: 10px; color: whitesmoke;" class="visible content">Submit!</div>
+          <div style="font-size: 25px; padding-left: 5px; padding-top: 5px; color: whitesmoke" class="hidden content">
+            <i class="white user icon"></i>
           </div>
         </button>
         {{#if displaySuccessMessage}}
@@ -41,6 +43,7 @@
         {{/if}}
       </form>
     </div>
+  </div>
   {{/if}}
 
 </template>

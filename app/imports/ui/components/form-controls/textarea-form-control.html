@@ -18,7 +18,7 @@
     }}
   <div class="{{#if required}}required{{/if}} field">
     <label style="color: whitesmoke">{{#if label}}{{label}}{{else}}{{name}}{{/if}}</label>
-    <textarea id="Bio" style="color: darkgreen; background-color: #AAF8AC; border: 1px solid green" rows="{{#if rows}}{{rows}}{{else}}5{{/if}}"
+    <textarea id="{{#if id}}{{id}}{{else}}{{label}}{{/if}}" style="background: linear-gradient(to bottom right, white, darkgreen, black) !important; border: 1px solid white; color: white;" rows="{{#if rows}}{{rows}}{{else}}5{{/if}}"
               name="{{#if name}}{{name}}{{else}}{{label}}{{/if}}"
               placeholder="{{#if placeholder}}{{placeholder}}{{else}}{{label}}{{/if}}">{{value}}</textarea>
   </div>
