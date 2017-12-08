@@ -152,146 +152,165 @@
         {
           "name": "League of Legends",
           "picture": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg",
-          "description": "This is league of legends game description",
+          "description": "League of Legends is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions,each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
           "link": "https://na.leagueoflegends.com/",
           "tags": [
             "MOBA",
-            "Multiplayer"
+            "Free to Play"
           ]
         },
         {
           "name": "Maplestory",
           "picture": "http://nxcache.nexon.net/all/v1.5.2/img/gnt/games-dropdown/maplestory.jpg",
-          "description": "Maple story?!",
+          "description": "MapleStory is a free-to-play, 2D, side-scrolling massively multiplayer online role-playing game.In the game, players travel the Maple World, defeating monsters and developing their characters' skills and abilities as is typical in role-playing games. Players can interact with others in many ways, including chatting and trading..",
           "link": "http://maplestory.nexon.net/",
           "tags": [
-            "MMORPG"
+            "MMORPG",
+            "Free to Play"
           ]
         },
         {
           "name": "World of Warcraft",
           "picture": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-285x380.jpg",
-          "description": "WOW",
-          "link": "",
+          "description": "World of Warcraft (WoW) is a massively multiplayer online role-playing game (MMORPG) released in 2004 by Blizzard Entertainment. It is the fourth released game set in the Warcraft fantasy universe. World of Warcraft takes place within the Warcraft world of Azeroth.As characters become more developed, they gain various talents and skills, requiring the player to further define the abilities of that character.",
+          "link": "https://worldofwarcraft.com/",
           "tags": [
-            "MMORPG"
+            "MMORPG",
+            "Dungeon Crawler"
           ]
         },
         {
           "name": "Runescape",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "http://www.runescape.com/img/microsite/social-share.jpg",
+          "description": "Set in the medieval fantasy world of Gielinor, RuneScape is a free browser MMO game where millions of players from around the globe become heroes with the freedom to explore and experience a realm full of magic, mystery and adventure.",
+          "link": "http://www.runescape.com/splash",
           "tags": [
-            ""
+            "Free to Play",
+            "MMORPG"
           ]
         },
         {
           "name": "Hearthstone",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "http://justokgamers.com/wp-content/uploads/2015/04/hearthstone-cover.jpg",
+          "description": "Hearthstone, originally known as Hearthstone: Heroes of Warcraft, is a free-to-play online collectible card video game. The game is a turn-based card game between two opponents, using constructed decks of thirty cards along with a selected hero with a unique power.",
+          "link": "https://playhearthstone.com/",
           "tags": [
-            ""
+            "Free to Play",
+            "Trading Card",
+            "Multiplayer"
           ]
         },
         {
           "name": "Overwatch",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://en.wikipedia.org/wiki/Overwatch_(video_game)#/media/File:Overwatch_cover_art_(PC).jpg",
+          "description": "Overwatch is a team-based multiplayer online first-person shooter video game. Overwatch assigns players into two teams of six, with each player selecting from a roster of over 20 characters, known in-game as heroes, each with a unique style of play, whose roles are divided into four general categories: Offense, Defense, Tank, and Support.",
+          "link": "https://playoverwatch.com/",
           "tags": [
-            ""
+            "FPS",
+            "MOBA"
           ]
         },
         {
           "name": "Combat Arms",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://upload.wikimedia.org/wikipedia/en/7/7a/Combat_Arms_cover.jpg",
+          "description": "Combat Arms: Reloaded is a multiplayer game, free-to-play modern first-person shooter. The game offers many different modes of play, including One Man Army, Elimination, Capture The Flag.",
+          "link": "https://combatarms.valofe.eu/",
           "tags": [
-            ""
+            "FPS",
+            "Free to Play"
           ]
         },
         {
           "name": "Diablo",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://blznav.akamaized.net/img/games/cards/card-diablo-3-6218a0746762f065.jpg",
+          "description": "Diablo is an action role-playing hack and slash dungeon crawler video game series developed by Blizzard Entertainment. Set in the fictional Kingdom of Khanduras, located in the mortal realm, Diablo has the player take control of a lone hero battling to rid the world of Diablo, the Lord of Terror.",
+          "link": "https://us.battle.net/d3/en/",
           "tags": [
-            ""
+            "RPG",
+            "Dungeon Crawler",
+            "Multiplayer"
           ]
         },
         {
           "name": "Mario Kart",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://vignette.wikia.nocookie.net/mariokart/images/d/da/Mario_MK64.jpg/revision/latest?cb=20100410111613",
+          "description": "Mario Kart is a series of go-kart-style racing video games developed and published by Nintendo as spin-offs from its trademark Super Mario series. There have been six Mario Kart games released for home consoles, three portable games, and four Namco co-developed arcade games, for a total of thirteen.",
+          "link": "https://mariokart8.nintendo.com/",
           "tags": [
-            ""
+            "Multiplayer",
+            "Platformer"
           ]
         },
         {
           "name": "PUBG",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-285x380.jpg",
+          "description": "PlayerUnknown's Battlegrounds is a multiplayer online battle royale game.　In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves.",
+          "link": "https://playbattlegrounds.com/",
           "tags": [
-            ""
+            "Multiplayer",
+            "FPS",
+            "Survival"
           ]
         },
         {
           "name": "Terraria",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://lh5.ggpht.com/5FKIFvWn5kNQvPLM4stjbVhWDuZkHB-ztk6oWP31dbvo7e9VrmoHpQYmzZcXFpj64g=h900",
+          "description": "Terraria is a sandbox 2D game with gameplay that revolves around exploration, building, and combat. The game has a 2D sprite tile-based graphical style reminiscent of the 16-bit sprites found on the Super NES.",
+          "link": "https://terraria.org/",
           "tags": [
-            ""
+            "Action",
+            "Adventure",
+            "Survival"
           ]
         },
         {
           "name": "Counter Strike",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "http://vignette1.wikia.nocookie.net/cswikia/images/1/1e/Csgo_steam_store_header_latest.jpg/revision/latest?cb=20161208032134",
+          "description": "Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game. The game pits two teams against each other: the Terrorists and the Counter-Terrorists. Both sides are tasked with eliminating the other while also completing separate objectives, the Terrorists, depending on the game mode.",
+          "link": "www.counter-strike.net/",
           "tags": [
-            ""
+            "FPS",
+            "Multiplayer"
           ]
         },
         {
           "name": "Rust",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://static-cdn.jtvnw.net/ttv-boxart/Rust-285x380.jpg",
+          "description": "The only aim in Rust is to survive. To do this you will need to overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals for meat. Protect yourself from other players, and kill them for meat. Create alliances with other players and form a town. Do whatever it takes to survive. ",
+          "link": "https://rust.facepunch.com/",
           "tags": [
-            ""
+            "Multiplayer",
+            "Survival"
           ]
         },
         {
           "name": "Grand Chase",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "http://static1.wikia.nocookie.net/__cb20111127011205/grandchase/images/7/7d/GrandChaseOriginalWallpaperFinal.jpg",
+          "description": "Grand Chase was a free-to-play, two-dimensional side-scrolling MMORPG. Due to the combos and special attacks, the game had a feel that is similar to side-scrolling fighting games such as Double Dragon, while the appearance and design of the backdrops, as well as the characters and monster, puts the game in an anime-esque setting. While it is an action game, the designers took care to not make a button masher.",
+          "link": "https://grandchasereborn.com/",
           "tags": [
-            ""
+            "MMORPG",
+            "Free to Play"
           ]
         },
         {
           "name": "Splash Fighters",
-          "picture": "",
-          "description": "",
-          "link": "",
+          "picture": "https://www.mmobomb.com/file/2011/03/splash-fighters-1.jpg",
+          "description": "SplashFighters is an online 3D fighting game. You'll need lightning reflexes, for not only can you be attacked from all sides, but from above as well! Players can choose from 100,000 different fighting styles.",
+          "link": "http://getamped2.cyberstep.com/home",
           "tags": [
-            ""
+            "Free to Play",
+            "Fighting"
           ]
         },
         {
           "name": "Gunbound",
           "picture": "",
-          "description": "",
-          "link": "",
+          "description": "GunBound is a free-to-play, turn-based, room-to-room, multiplayer online game with many similar features to the popular Worms game series.  In GunBound, players are assigned to two opposing teams which take turns firing at each other with vehicles called Mobiles in GunBound parlance. Each Mobile has three unique weapons, labeled 1, 2, and SS (Special Shot).",
+          "link": "http://gunbound.softnyx.net/",
           "tags": [
-            ""
+            "Free to Play",
+            "Multiplayer"
           ]
         }
       ]
@@ -299,31 +318,49 @@
     {
       "name": "GamerProfileCollection",
       "contents": [
+        {"firstName": "Yizan",
+          "lastName": "Chen",
+          "username": "yizan",
+          "picture": "",
+          "bio": "",
+          "games": [
+            "League of Legends"
+          ],
+          "steam": "",
+          "blizzard": "",
+          "league": ""
+        }
+      ]
+        },
         {
           "firstName": "Tevin",
           "lastName": "Sales",
           "username": "salest2"
         },
         {
-          "firstName":"Kalani",
-          "lastName":"Sanidad",
-          "username":"ksanidad",
+          "firstName": "Kalani",
+          "lastName": "Sanidad",
+          "username": "ksanidad",
           "picture": "/images/lau.jpg",
-          "bio":"LOL gg fam",
+          "bio": "LOL gg fam",
           "games": [
             "Gunbound",
             "League of Legends",
             "Rust"
           ],
-          "steam":"kaisuke23",
-          "blizzard":"",
-          "league":"kaisuke23"
+          "steam": "kaisuke23",
+          "blizzard": "",
+          "league": "kaisuke23"
         }
       ]
     },
     {
       "name": "TagsCollection",
       "contents": [
+        {
+          "name": "Survival",
+          "description": ""
+        },
         {
           "name": "MMORPG",
           "description": ""
