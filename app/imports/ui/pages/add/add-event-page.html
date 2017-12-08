@@ -17,9 +17,12 @@
         </div>
 
         <div class="fields">
-          {{> Text_Form_Control label="Date" placeholder="Month / Day / Year" value=event.date errorMessage=(fieldError "date")}}
-          {{> Text_Form_Control label="Time" placeholder="XX:XX - XX:XX" value=event.time errorMessage=(fieldError "time")}}
+          {{> Text_Form_Control label="Date" placeholder="XX/XX/XX" value=event.date errorMessage=(fieldError "date")}}
           {{> Text_Form_Control label="Phone" placeholder="XXX - XXX - XXXX" value=event.phone errorMessage=(fieldError "phone")}}
+        </div>
+
+        <div class="fields">
+          {{> Text_Form_Control label="Time" placeholder="XX:XX AM/PM - XX:XX AM/PM" value=event.time errorMessage=(fieldError "time")}}
           {{> Text_Form_Control label="Location" placeholder="POST 127" value=event.location errorMessage=(fieldError "location")}}
         </div>
 

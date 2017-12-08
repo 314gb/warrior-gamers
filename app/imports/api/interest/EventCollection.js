@@ -20,7 +20,7 @@ class EventCollection extends BaseCollection {
     super('Event', new SimpleSchema({
       name: { type: String },
       date: { type: String, regEx: /(\d+)(-|\/)(\d+)(?:-|\/)(?:(\d+)\s+(\d+):(\d+)(?::(\d+))?(?:\.(\d+))?)?/ },
-      time: { type: String, regEx: /^(10|11|12|[1-9]):[0-5][0-9]$/ },
+      time: { type: String, regEx: /\b((?:1[0-2]|[1-9]):[0-5][0-9] [AP]M) - ((?:1[0-2]|[1-9]):[0-5][0-9] [AP]M)/ },
       phone: { type: String, regEx: /^\d{3}-\d{3}-\d{4}$/ },
       location: { type: String },
       picture: { type: SimpleSchema.RegEx.Url, optional: true },
