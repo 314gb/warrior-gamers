@@ -63,9 +63,7 @@ Template.Gamer_Profile_Page.helpers({
       var request ='https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/';
       var apiAppender = '?api_key=';
       var LeagueKey = 'XXXXX-XXXXXXX-XXXXXX';
-
       var URLsending = request + profile.league +apiAppender + LeagueKey;
-
     },
 });
 
@@ -84,6 +82,10 @@ Template.Gamer_Profile_Page.events({
     const bio = event.target.Bio.value;
     const selectedGames = _.filter(event.target.Games.selectedOptions, (option) => option.selected);
     const games = _.map(selectedGames, (option) => option.value);
+
+    if (picture === '') {
+      picture = 'http://www.bestmachine.online/uploads/42/1024px-No_image_available.svg.png';
+    }
 
     const updatedProfileData = { firstName, lastName, picture, steam, blizzard, league, bio, games,
       username };
