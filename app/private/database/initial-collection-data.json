@@ -322,34 +322,133 @@
           "firstName": "Yizan",
           "lastName": "Chen",
           "username": "yizan",
-          "picture": "",
-          "bio": "",
+          "picture": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAA2MAAAAJDJhZDY0NjU2LTdlNmMtNGNiNS1iNDM5LTkyY2VhZjRmNGE0Ng.jpg",
+          "bio": "Hello nice to meet you! I'm Yizan, let's play League together!",
           "games": [
-            "League of Legends"
+            "League of Legends",
+            "Grand Chase",
+            "Splash Fighters",
+            "Hearthstone"
           ],
-          "steam": "",
-          "blizzard": "",
-          "league": ""
+          "steam": "idk",
+          "blizzard": "Foofofo",
+          "league": "asdfw"
         },
         {
           "firstName": "Tevin",
           "lastName": "Sales",
-          "username": "salest2"
+          "username": "salest2",
+          "picture": "https://tevintsales.github.io/images/profilepic.png",
+          "bio": "Hello folks! I'm Tevin! I am currently playing League of Legends and some mobile games. Let me know if you're down to play!",
+          "games": [
+            "Diablo",
+            "League of Legends",
+            "Rust",
+            "Counter Strike"
+          ],
+          "steam": "Tevin",
+          "blizzard": "",
+          "league": "Tevint"
         },
         {
           "firstName": "Kalani",
           "lastName": "Sanidad",
           "username": "ksanidad",
           "picture": "/images/lau.jpg",
-          "bio": "LOL gg fam",
+          "bio": "LOL gg fam.",
           "games": [
             "Gunbound",
             "League of Legends",
-            "Rust"
+            "Rust",
+            "Overwatch"
           ],
           "steam": "kaisuke23",
-          "blizzard": "",
+          "blizzard": "kaisuke23",
           "league": "kaisuke23"
+        },
+        {
+          "firstName": "Raven",
+          "lastName": "Robles",
+          "username": "ravenr",
+          "picture": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/18620183_1338631516226999_2203278278513459733_n.jpg?oh=a9ce0bb30c54ed467851ef9109c05aaf&oe=5AD1A0CF",
+          "bio": "Hi.",
+          "games": [
+            "League of Legends",
+            "Runescape",
+            "Counter Strike"
+          ],
+          "steam": "",
+          "blizzard": "",
+          "league": "Epileptical"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Domingo",
+          "username": "johnd",
+          "picture": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/12494754_1141418029216901_2969333922630956448_n.jpg?oh=530c5a0147a98946a7059364ba46f1f9&oe=5A8EB59F",
+          "bio": "Hi.",
+          "games": [
+            "League of Legends",
+            "Runescape",
+            "Counter Strike"
+          ],
+          "steam": "",
+          "blizzard": "",
+          "league": "john"
+        },
+        {
+          "firstName": "Shaneera",
+          "lastName": "Guruluawana",
+          "username": "guruluwanas",
+          "picture": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1148891_645364925536802_1947619217_n.jpg?oh=67ad36ff8405fa7893e753b231305391&oe=5AD5ACC1",
+          "bio": "Sup braddah, we go play some Overwatch or something cuz.",
+          "games": [
+            "League of Legends",
+            "Overwatch",
+            "Combat Arms"
+          ],
+          "steam": "",
+          "blizzard": "",
+          "league": "Shaneera"
+        },
+        {
+          "firstName": "Tu",
+          "lastName": "Vo",
+          "username": "Votu",
+          "picture": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/16388430_1219727418064858_3068598297045442025_n.jpg?oh=e80d98872d4d5f29452968a80643215a&oe=5A915BCC",
+          "bio": "Ayyee, we play some Combat Arms or League!",
+          "games": [
+            "League of Legends",
+            "Combat Arms"
+          ],
+          "steam": "",
+          "blizzard": "",
+          "league": "tuvo"
+        },
+        {
+          "firstName": "Adrian",
+          "lastName": "Aganos",
+          "username": "aganosa",
+          "picture": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/16472797_1569798219701717_6434891790150877488_n.jpg?oh=686b7bec4e48fb915774557656778d0b&oe=5A895DAD",
+          "bio": "Sup, we play some Runescape brah.",
+          "games": [
+            "Runescape"
+          ],
+          "steam": "",
+          "blizzard": "",
+          "league": ""
+        },
+        {
+          "firstName": "Philip",
+          "lastName": "Johnson",
+          "username": "johnson",
+          "picture": "/images/johnson.jpg",
+          "bio": "",
+          "games": [
+          ],
+          "steam": "",
+          "blizzard": "",
+          "league": ""
         }
       ]
     },
